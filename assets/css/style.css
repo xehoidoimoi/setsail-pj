@@ -157,7 +157,6 @@ body {
 }
 
 header {
-  position: relative;
   background-color: #3fd0d4;
 }
 
@@ -167,7 +166,9 @@ header {
 
 .header {
   min-height: 69px;
-  margin-left: 26px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 20px;
 }
 .header__bars, .header__user {
   flex: 0;
@@ -181,12 +182,15 @@ header {
 }
 .header__bars-list {
   content: "";
-  position: absolute;
   top: 100%;
   left: 0;
   right: 0;
-  padding: 0 54px;
-  border: 1px solid #ebebeb;
+  padding: 0 60px;
+  max-height: 0;
+  display: none;
+  transition: all 0.7s linear;
+  will-change: all;
+  border-bottom: 1px solid #ebebeb;
 }
 .header__bars-heading {
   color: #212121;
@@ -199,20 +203,20 @@ header {
   padding-right: 10px;
 }
 .header__bars-item {
-  display: flex;
   position: relative;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid #ebebeb;
-  justify-content: space-between;
+  display: flex;
   align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 .header__bars-item:last-child {
   border: 0;
 }
 .header .sub-header__list {
   content: "";
-  position: absolute;
-  display: none;
 }
 .header__logo a {
   height: 36px;
@@ -222,8 +226,10 @@ header {
   width: auto;
   margin: 0 auto;
 }
-.header__user {
-  margin-right: 55px;
+
+.header__user-icon {
+  font-size: 24px;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

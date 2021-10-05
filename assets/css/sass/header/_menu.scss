@@ -1,7 +1,6 @@
 @use "sass:map";
 
 header {
-      position: relative;
       background-color: $primary_color;
 }
 
@@ -11,7 +10,9 @@ header {
 
 .header {
       min-height: 69px;
-      margin-left: 26px;
+      display: flex;
+      justify-content: space-around;
+      padding: 0px 20px;
 
       &__bars,
       &__user {
@@ -35,12 +36,16 @@ header {
 
             &-list {
                   content: '';
-                  position: absolute;
                   top: 100%;
                   left: 0;
                   right: 0;
-                  padding: 0 54px;
-                  @include border(border);
+                  padding: 0 60px;
+                  max-height: 0;
+                  display: none;
+                  // overflow-y: scroll;
+                  transition: all 0.7s linear;
+                  will-change: all;
+                  @include border(bottom);
             }
 
             &-heading {
@@ -54,12 +59,10 @@ header {
             }
 
             &-item {
-                  display: flex;
                   position: relative;
-                  padding: 1.2rem 0;
+                  padding: 1rem 0;
                   @include border(bottom);
-                  justify-content: space-between;
-                  align-items: baseline;
+                  @include flex(baseline, space-between);
 
                   &:last-child {
                         border: 0;
@@ -71,8 +74,8 @@ header {
       .sub-header {
             &__list {
                   content: '';
-                  position: absolute;
-                  display: none;
+                  // position: absolute;
+                  // display: none;
             }
       }
 
@@ -89,9 +92,4 @@ header {
                   }
             }
       }
-
-      &__user {
-            margin-right: 55px;
-      }
-
 }
