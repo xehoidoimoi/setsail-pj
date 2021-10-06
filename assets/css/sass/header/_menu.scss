@@ -4,10 +4,6 @@ header {
       background-color: $primary_color;
 }
 
-.dropdown-toggle::after {
-      content: none;
-}
-
 .header {
       min-height: 69px;
       display: flex;
@@ -19,18 +15,16 @@ header {
             flex: 0;
       }
 
-      &__user {
-            svg {
-                  height: 24px !important;
-                  width: 24px !important;
-            }
-      }
 
       // ? ----------Menu Bars Header----------
       &__bars {
             &-menu {
                   span {
                         font-size: 2.24rem;
+
+                        i:active {
+                              @include background-opacity(#fff, 0.3)
+                        }
                   }
             }
 
@@ -42,30 +36,51 @@ header {
                   padding: 0 60px;
                   max-height: 0;
                   display: none;
-                  // overflow-y: scroll;
                   transition: all 0.7s linear;
                   will-change: all;
                   @include border(bottom);
-            }
+                  -ms-overflow-style: none;
+                  scrollbar-width: none;
 
-            &-heading {
-                  @include heading;
-                  @include title (1.5rem);
-            }
-
-            .mobile-arrow {
-                  font-size: 1.2rem;
-                  padding-right: 10px;
+                  &::-webkit-scrollbar {
+                        display: none;
+                  }
             }
 
             &-item {
                   position: relative;
-                  padding: 1rem 0;
-                  @include border(bottom);
-                  @include flex(baseline, space-between);
 
                   &:last-child {
-                        border: 0;
+                        h3 {
+                              border: 0;
+                        }
+                  }
+            }
+
+            .mobile-arrow {
+                  position: absolute;
+                  font-size: 1.2rem;
+                  top: 0;
+                  right: 0;
+                  width: 50px;
+                  height: auto;
+                  text-align: right;
+                  padding: 12px 12px 10px 0;
+
+                  i {
+                        display: inline-block;
+                  }
+            }
+
+            &-heading {
+                  position: relative;
+                  padding: 1rem 0;
+                  @include heading;
+                  @include title (1.5rem);
+                  @include border(bottom);
+
+                  &:active {
+                        @include background-opacity($primary_color, 0.2)
                   }
             }
       }
@@ -73,12 +88,23 @@ header {
       // ? Sub header
       .sub-header {
             &__list {
-                  content: '';
-                  // position: absolute;
-                  // display: none;
+                  margin-left: 15px;
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: all 0.7s linear;
+                  will-change: all;
+            }
+
+            &__item {
+                  @include border(bottom);
+                  padding: 8px 0;
+            }
+
+            &__link {
+                  @include heading;
+                  font-weight: 500;
             }
       }
-
 
       // todo-------------------- Logo------------------
       &__logo {

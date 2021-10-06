@@ -133,7 +133,7 @@ table {
 a {
   text-decoration: none;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -160,10 +160,6 @@ header {
   background-color: #3fd0d4;
 }
 
-.dropdown-toggle::after {
-  content: none;
-}
-
 .header {
   min-height: 69px;
   display: flex;
@@ -173,12 +169,13 @@ header {
 .header__bars, .header__user {
   flex: 0;
 }
-.header__user svg {
-  height: 24px !important;
-  width: 24px !important;
-}
 .header__bars-menu span {
   font-size: 2.24rem;
+}
+.header__bars-menu span i:active {
+  background: #fff;
+  /* The Fallback */
+  background: rgba(255, 255, 255, 0.3);
 }
 .header__bars-list {
   content: "";
@@ -191,32 +188,59 @@ header {
   transition: all 0.7s linear;
   will-change: all;
   border-bottom: 1px solid #ebebeb;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.header__bars-list::-webkit-scrollbar {
+  display: none;
+}
+.header__bars-item {
+  position: relative;
+}
+.header__bars-item:last-child h3 {
+  border: 0;
+}
+.header__bars .mobile-arrow {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: auto;
+  text-align: right;
+  padding: 12px 12px 10px 0;
+}
+.header__bars .mobile-arrow i {
+  display: inline-block;
 }
 .header__bars-heading {
+  position: relative;
+  padding: 1rem 0;
   color: #212121;
   color: #212121;
   font-weight: 600;
   font-size: 1.5rem;
-}
-.header__bars .mobile-arrow {
-  font-size: 1.2rem;
-  padding-right: 10px;
-}
-.header__bars-item {
-  position: relative;
-  padding: 1rem 0;
   border-bottom: 1px solid #ebebeb;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-direction: row;
 }
-.header__bars-item:last-child {
-  border: 0;
+.header__bars-heading:active {
+  background: #3fd0d4;
+  /* The Fallback */
+  background: rgba(63, 208, 212, 0.2);
 }
 .header .sub-header__list {
-  content: "";
+  margin-left: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.7s linear;
+  will-change: all;
+}
+.header .sub-header__item {
+  border-bottom: 1px solid #ebebeb;
+  padding: 8px 0;
+}
+.header .sub-header__link {
+  color: #212121;
+  font-weight: 500;
 }
 .header__logo a {
   height: 36px;
