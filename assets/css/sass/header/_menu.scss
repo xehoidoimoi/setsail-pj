@@ -1,0 +1,95 @@
+@use "sass:map";
+
+header {
+      background-color: $primary_color;
+}
+
+.dropdown-toggle::after {
+      content: none;
+}
+
+.header {
+      min-height: 69px;
+      display: flex;
+      justify-content: space-around;
+      padding: 0px 20px;
+
+      &__bars,
+      &__user {
+            flex: 0;
+      }
+
+      &__user {
+            svg {
+                  height: 24px !important;
+                  width: 24px !important;
+            }
+      }
+
+      // ? ----------Menu Bars Header----------
+      &__bars {
+            &-menu {
+                  span {
+                        font-size: 2.24rem;
+                  }
+            }
+
+            &-list {
+                  content: '';
+                  top: 100%;
+                  left: 0;
+                  right: 0;
+                  padding: 0 60px;
+                  max-height: 0;
+                  display: none;
+                  // overflow-y: scroll;
+                  transition: all 0.7s linear;
+                  will-change: all;
+                  @include border(bottom);
+            }
+
+            &-heading {
+                  @include heading;
+                  @include title (1.5rem);
+            }
+
+            .mobile-arrow {
+                  font-size: 1.2rem;
+                  padding-right: 10px;
+            }
+
+            &-item {
+                  position: relative;
+                  padding: 1rem 0;
+                  @include border(bottom);
+                  @include flex(baseline, space-between);
+
+                  &:last-child {
+                        border: 0;
+                  }
+            }
+      }
+
+      // ? Sub header
+      .sub-header {
+            &__list {
+                  content: '';
+                  // position: absolute;
+                  // display: none;
+            }
+      }
+
+
+      // todo-------------------- Logo------------------
+      &__logo {
+            a {
+                  height: 36px;
+
+                  img {
+                        height: inherit;
+                        width: auto;
+                        margin: 0 auto;
+                  }
+            }
+      }
+}
