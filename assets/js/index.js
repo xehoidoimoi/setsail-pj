@@ -1,11 +1,7 @@
-// const sass = require('sass');
-// const result = sass.renderSync({ file: "style.scss" });
-// console.log(result.css.toString());
-
-
+// todo set Height effect
 const barsMenu = document.querySelector('.header__bars-btn');
 const headerBarsList = document.querySelector('.header__bars-list');
-console.log(headerBarsList);
+// ? Option 1: Vanilla JS 
 barsMenu.addEventListener('click', function (e) {
       console.log('object')
       if (headerBarsList.style.maxHeight) {
@@ -16,27 +12,52 @@ barsMenu.addEventListener('click', function (e) {
             headerBarsList.style.maxHeight = headerBarsList.scrollHeight + 'px';
       }
 });
+//? Option 2: JQuery
+// $(document).ready(function () {
+//       $(".header__bars-btn").click(function () {
+//             $(".header__bars-list").animate({
+//                   height: 'toggle'
+//             }, 'slow');
+//       });
+// });
+// ? Option 3: JQuery
+// $(document).ready(function () {
+//       $(".header__bars-btn").click(function () {
+//             $(".header__bars-list").slideToggle("slow");
+//       });
+// });
 
-const headerBarsHeading = document.querySelectorAll('.header__bars-heading');
-console.log(headerBarsHeading);
-const subHeaderList = document.querySelectorAll('.sub-header__list');
-console.log(subHeaderList);
+const headerBarsHeading = document.querySelectorAll('.header__bars-heading'); // get heading menu 
+const subHeaderList = document.querySelectorAll('.sub-header__list'); // get sub-header list
 const mobileArrow = document.querySelectorAll('.mobile-arrow i');
-console.log(mobileArrow)
 
 headerBarsHeading.forEach((item, index) => {
-      const subHeaderItem = subHeaderList[index];
+      const subHeaderListItem = subHeaderList[index]; // get sub-header item one by sub-header list
       const mobileArrowItem = mobileArrow[index];
       item.onclick = () => {
-            item.style.color = '#3fd0d4';
-            console.log([item])
-            if (subHeaderItem.style.maxHeight) {
-                  subHeaderItem.style.maxHeight = null;
+            const headerBarsHeadingHasActive = document.querySelector('.header__bars-heading.active-color');
+            headerBarsHeadingHasActive.classList.remove('active-color');
+            item.classList.add('active-color');
+            if (subHeaderListItem.style.maxHeight) {
+                  subHeaderListItem.style.maxHeight = null;
                   mobileArrowItem.style.transform = 'rotate(0deg)';
             } else {
-                  subHeaderItem.style.maxHeight = subHeaderItem.scrollHeight + 'px';
+                  subHeaderListItem.style.maxHeight = subHeaderListItem.scrollHeight + 'px';
                   mobileArrowItem.style.transform = 'rotate(90deg)';
                   headerBarsList.style.maxHeight = (headerBarsList.scrollHeight + 50) + 'px';
             }
       }
 });
+
+const subHeaderLinks = document.querySelectorAll('.sub-header__link');
+console.log(subHeaderLinks);
+subHeaderLinks.forEach((item) => {
+      item.onclick = () => {
+            const subHeaderLinkActive = document.querySelector('.sub-header__link.active-color');
+            subHeaderLinkActive.classList.remove('active-color');
+            item.classList.add('active-color');
+      }
+});
+
+
+

@@ -5,3 +5,7 @@ $text-color: ("text": #efefef,
 );
 
 $border-color: #ebebeb;
+
+.active-color {
+      color: $primary_color !important;
+}

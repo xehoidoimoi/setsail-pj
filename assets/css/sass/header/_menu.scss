@@ -65,6 +65,7 @@ header {
                   width: 50px;
                   height: auto;
                   text-align: right;
+                  pointer-events: none;
                   padding: 12px 12px 10px 0;
 
                   i {
@@ -90,19 +91,27 @@ header {
             &__list {
                   margin-left: 15px;
                   max-height: 0;
-                  overflow: hidden;
+                  overflow: scroll;
                   transition: all 0.7s linear;
                   will-change: all;
+                  -ms-overflow-style: none;
+                  scrollbar-width: none;
+
+                  &::-webkit-scrollbar {
+                        display: none;
+                  }
             }
 
             &__item {
-                  @include border(bottom);
-                  padding: 8px 0;
+                  position: relative;
             }
 
             &__link {
                   @include heading;
                   font-weight: 500;
+                  @include border(bottom);
+                  padding: 10px 0;
+                  display: block;
             }
       }
 
