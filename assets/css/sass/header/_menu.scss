@@ -15,7 +15,6 @@ header {
             flex: 0;
       }
 
-
       // ? ----------Menu Bars Header----------
       &__bars {
             &-menu {
@@ -23,13 +22,13 @@ header {
                         font-size: 2.24rem;
 
                         i:active {
-                              @include background-opacity(#fff, 0.3)
+                              @include background-opacity(#fff, 0.3);
                         }
                   }
             }
 
             &-list {
-                  content: '';
+                  content: "";
                   top: 100%;
                   left: 0;
                   right: 0;
@@ -76,12 +75,11 @@ header {
             &-heading {
                   position: relative;
                   padding: 1rem 0;
-                  @include heading;
-                  @include title (1.5rem);
+                  @include title(1.5rem);
                   @include border(bottom);
 
                   &:active {
-                        @include background-opacity($primary_color, 0.2)
+                        @include background-opacity($primary_color, 0.2);
                   }
             }
       }

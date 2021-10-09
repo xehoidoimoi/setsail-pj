@@ -160,6 +160,10 @@ body {
   color: #3fd0d4 !important;
 }
 
+.font-weight {
+  font-weight: 500 !important;
+}
+
 header {
   background-color: #3fd0d4;
 }
@@ -221,7 +225,6 @@ header {
 .header__bars-heading {
   position: relative;
   padding: 1rem 0;
-  color: #212121;
   color: #212121;
   font-weight: 600;
   font-size: 1.5rem;
