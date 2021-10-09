@@ -156,6 +156,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+button,
+input {
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+
 .active-color {
   color: #3fd0d4 !important;
 }
@@ -269,6 +276,55 @@ header {
 .header__user-icon {
   font-size: 24px;
   margin-right: 5px;
+}
+
+.modal__list-item {
+  width: 50%;
+}
+.modal__list-btn {
+  width: 100%;
+  padding: 17px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  background-color: #3abdc1;
+}
+.modal__list-btn.active {
+  background-color: #3fd0d4;
+}
+
+.modal__login {
+  padding: 30px 25px;
+  background-color: #3fd0d4;
+}
+.modal__login-input {
+  padding: 13px 16px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-bottom: 6px;
+}
+.modal__login-input input {
+  flex: 1;
+  color: #fff;
+}
+.modal__login-input input::placeholder {
+  color: #fff;
+}
+.modal__login-input input::-ms-input-placeholder {
+  color: #fff;
+}
+.modal__login-input input:-ms-input-placeholder {
+  color: #fff;
+}
+.modal__login-input span {
+  min-width: 30px;
+  padding-left: 2px;
+  display: inline-block;
+}
+.modal__login-check {
+  padding: 12px 0;
+}
+.modal__login-check label {
+  padding-left: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

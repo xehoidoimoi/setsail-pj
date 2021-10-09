@@ -6,3 +6,66 @@
 }
 
 // todo Modal
+// ? Header
+.modal__list {
+      &-item {
+            width: 50%;
+      }
+
+      &-btn {
+            width: 100%;
+            padding: 17px 0;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            background-color: #3abdc1;
+
+            &.active {
+                  background-color: $primary_color;
+            }
+      }
+}
+
+// ? Body
+// todo Login
+.modal__login {
+      padding: 30px 25px;
+      background-color: $primary_color;
+
+      &-input {
+            padding: 13px 16px;
+            background-color: rgba(255, 255, 255, .25);
+            margin-bottom: 6px;
+
+            input {
+                  flex: 1;
+                  color: #fff;
+            }
+
+            input::placeholder {
+                  color: #fff;
+            }
+
+            input::-ms-input-placeholder {
+                  color: #fff;
+            }
+
+            input:-ms-input-placeholder {
+                  color: #fff;
+            }
+
+            span {
+                  min-width: 30px;
+                  padding-left: 2px;
+                  display: inline-block;
+            }
+      }
+
+      &-check {
+            padding: 12px 0;
+
+            label {
+                  padding-left: 12px;
+            }
+      }
+}

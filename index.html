@@ -457,23 +457,91 @@
                               </a>
                         </div>
                         <div class="header__user">
-                              <!-- Button to Open the Modal -->
+                              <!--! Button to Open the Modal -->
                               <div data-bs-toggle="modal" data-bs-target="#myModal">
                                     <i class="header__user-icon text-white bi bi-person-circle"></i>
                               </div>
-                              <!-- The Modal -->
+                              <!--! The Modal -->
                               <div class="modal fade" id="myModal">
                                     <div class="modal-dialog modal-dialog-centered">
                                           <div class="modal-content">
+                                                <!--? Modal Header -->
+                                                <ul class="modal__list flex-row d-flex justify-content-around"
+                                                      id="myTab" role="tablist">
+                                                      <li class="modal__list-item" role="presentation">
+                                                            <button
+                                                                  class="modal__list-btn active text-uppercase text-white active"
+                                                                  id="home-tab" data-bs-toggle="tab"
+                                                                  data-bs-target="#home" type="button" role="tab"
+                                                                  aria-controls="home"
+                                                                  aria-selected="true">Login</button>
+                                                      </li>
+                                                      <li class="modal__list-item" role="presentation">
+                                                            <button class="modal__list-btn text-uppercase text-white"
+                                                                  id="profile-tab" data-bs-toggle="tab"
+                                                                  data-bs-target="#profile" type="button" role="tab"
+                                                                  aria-controls="profile"
+                                                                  aria-selected="false">Register</button>
+                                                      </li>
+                                                </ul>
+                                                <!--? Modal Body -->
                                                 <!-- todo Login -->
                                                 <div class="modal__login">
-                                                      <!-- Modal Header -->
-                                                      <ul class="modal__list">
-                                                            <li class="modal__list-item"></li>
-                                                            <li class="modal__list-item"></li>
-                                                      </ul>
+                                                      <div class="modal__login-body">
+                                                            <form method="post" class="modal__login-form">
+                                                                  <fieldset>
+                                                                        <div class="modal__login-input d-flex">
+                                                                              <span>
+                                                                                    <i
+                                                                                          class="fas fa-user text-white"></i>
+                                                                              </span>
+                                                                              <input type="text" name="user__login-name"
+                                                                                    id="user__login-name"
+                                                                                    placeholder="User Name">
+                                                                        </div>
+                                                                        <div class="modal__login-input d-flex">
+                                                                              <span>
+                                                                                    <i
+                                                                                          class="fas fa-user-lock text-white"></i>
+                                                                              </span>
+                                                                              <input type="password"
+                                                                                    name="user__login-pwd"
+                                                                                    id="user__login-pwd"
+                                                                                    placeholder="Password">
+                                                                        </div>
+                                                                        <div class="modal__login-check">
+                                                                              <input type="checkbox"
+                                                                                    name="remember-check"
+                                                                                    id="remember-check">
+                                                                              <label class="text-white"
+                                                                                    for="remember-check">Remember
+                                                                                    me</label>
+                                                                        </div>
+                                                                        <div class="modal__login-action">
+                                                                              <a href="#"
+                                                                                    class="modal__login-forget d-block">Forgot
+                                                                                    Your Password</a>
+                                                                              <input class="btn d-block" type="submit"
+                                                                                    value="SIGN IN">
+                                                                        </div>
+                                                                  </fieldset>
+                                                            </form>
+                                                      </div>
+                                                      <div class="modal__social">
+                                                            <h3 class="modal__social-heading">Sign in width Facebook or
+                                                                  Google+</h3>
+                                                            <ul class="modal__social-list">
+                                                                  <li class="modal__social-item">
+                                                                        <a href="#"
+                                                                              class="modal__social-link facebook-btn text--uppercase">Facebook</a>
+                                                                  </li>
+                                                                  <li class="modal__social-item">
+                                                                        <a href="#"
+                                                                              class="modal__social-link facebook-btn text--uppercase">Google+</a>
+                                                                  </li>
+                                                            </ul>
+                                                      </div>
                                                 </div>
-
                                           </div>
                                     </div>
                               </div>
