@@ -324,7 +324,44 @@ header {
   padding: 12px 0;
 }
 .modal__login-check label {
-  padding-left: 12px;
+  position: relative;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 30px;
+}
+.modal__login-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.modal__login-check .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.modal__login-check .checkmark::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #3fd0d4;
+  transform: translate(-50%, -50%);
+}
+.modal__login-check input:checked ~ .checkmark:after {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
