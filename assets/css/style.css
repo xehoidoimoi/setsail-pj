@@ -278,8 +278,18 @@ header {
   margin-right: 5px;
 }
 
+.modal__user {
+  border: 0 !important;
+  margin: 0 16px !important;
+}
+
 .modal__list-item {
   width: 50%;
+}
+.modal__list-item:active {
+  background: #000;
+  /* The Fallback */
+  background: rgba(0, 0, 0, 0.2);
 }
 .modal__list-btn {
   width: 100%;
@@ -289,12 +299,18 @@ header {
   letter-spacing: 0.1rem;
   background-color: #3abdc1;
 }
-.modal__list-btn.active {
+.modal__list-btn.active-2 {
   background-color: #3fd0d4;
+}
+.modal__list-btn:active {
+  background: #3fd0d4;
+  /* The Fallback */
+  background: rgba(63, 208, 212, 0.78);
 }
 
 .modal__login {
   padding: 30px 25px;
+  padding-bottom: 20px;
   background-color: #3fd0d4;
 }
 .modal__login-input {
@@ -331,6 +347,7 @@ header {
   -ms-user-select: none;
   user-select: none;
   padding-left: 30px;
+  width: fit-content;
 }
 .modal__login-check input {
   position: absolute;
@@ -362,6 +379,67 @@ header {
 }
 .modal__login-check input:checked ~ .checkmark:after {
   display: block;
+}
+.modal__login-action {
+  margin-bottom: 12px;
+}
+.modal__login-action input {
+  width: 100%;
+  font-size: 13px;
+  padding: 14px 0;
+  border-radius: 0;
+  font-weight: 600;
+  margin-top: 19px;
+  letter-spacing: 0.1rem;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+.modal__login-action input:active {
+  background: #3fd0d4;
+  /* The Fallback */
+  background: rgba(63, 208, 212, 0.5);
+}
+.modal__login-action input:hover {
+  background-color: #3abdc1;
+}
+.modal__login-forget {
+  color: #26878a;
+  width: fit-content;
+  transition: all 0.7s ease-in;
+}
+.modal__login-forget:active {
+  background: #3fd0d4;
+  /* The Fallback */
+  background: rgba(63, 208, 212, 0.9);
+}
+.modal__login-forget:hover {
+  color: #212121;
+}
+
+.modal__social-heading {
+  margin-top: 20px;
+}
+.modal__social-item {
+  width: 50%;
+  line-height: 50px;
+}
+.modal__social-item:first-child {
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+}
+.modal__social-item:first-child:active {
+  background: #3b5998;
+  /* The Fallback */
+  background: rgba(59, 89, 152, 0.9);
+}
+.modal__social-item:last-child {
+  background-color: #dd4b39;
+  border: 1px solid #dd4b39;
+}
+.modal__social-item:last-child:active {
+  background: #dd4b39;
+  /* The Fallback */
+  background: rgba(221, 75, 57, 0.9);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,6 +22,7 @@
 
 <body>
       <div class="main">
+            <!-- !Header -->
             <header class="container-fluid position-relative">
                   <section class="header container align-items-center">
                         <div class="header__bars ">
@@ -464,84 +465,164 @@
                               <!--! The Modal -->
                               <div class="modal fade" id="myModal">
                                     <div class="modal-dialog modal-dialog-centered">
-                                          <div class="modal-content">
+                                          <div class="modal-content modal__user">
                                                 <!--? Modal Header -->
-                                                <ul class="modal__list flex-row d-flex justify-content-around"
+                                                <!-- todo Nav Tabs -->
+                                                <ul class="modal__list nav nav-pills flex-row d-flex justify-content-around"
                                                       id="myTab" role="tablist">
-                                                      <li class="modal__list-item" role="presentation">
+                                                      <li class="modal__list-item">
                                                             <button
-                                                                  class="modal__list-btn active text-uppercase text-white active"
-                                                                  id="home-tab" data-bs-toggle="tab"
-                                                                  data-bs-target="#home" type="button" role="tab"
-                                                                  aria-controls="home"
-                                                                  aria-selected="true">Login</button>
+                                                                  class="modal__list-btn active text-uppercase text-white active-2"
+                                                                  data-bs-toggle="tab"
+                                                                  href="#modal-login">Login</button>
                                                       </li>
-                                                      <li class="modal__list-item" role="presentation">
+                                                      <li class="modal__list-item">
                                                             <button class="modal__list-btn text-uppercase text-white"
-                                                                  id="profile-tab" data-bs-toggle="tab"
-                                                                  data-bs-target="#profile" type="button" role="tab"
-                                                                  aria-controls="profile"
-                                                                  aria-selected="false">Register</button>
+                                                                  data-bs-toggle="tab"
+                                                                  href="#modal-register">Register</button>
                                                       </li>
                                                 </ul>
-                                                <!--? Modal Body -->
-                                                <!-- todo Login -->
-                                                <div class="modal__login">
-                                                      <div class="modal__login-body">
-                                                            <form method="post" class="modal__login-form">
-                                                                  <fieldset>
-                                                                        <div class="modal__login-input d-flex">
-                                                                              <span>
-                                                                                    <i
-                                                                                          class="fas fa-user text-white"></i>
-                                                                              </span>
-                                                                              <input type="text" name="user__login-name"
-                                                                                    id="user__login-name"
-                                                                                    placeholder="User Name">
-                                                                        </div>
-                                                                        <div class="modal__login-input d-flex">
-                                                                              <span>
-                                                                                    <i
-                                                                                          class="fas fa-user-lock text-white"></i>
-                                                                              </span>
-                                                                              <input type="password"
-                                                                                    name="user__login-pwd"
-                                                                                    id="user__login-pwd"
-                                                                                    placeholder="Password">
-                                                                        </div>
-                                                                        <div class="modal__login-check">
-                                                                              <label class="text-white"
-                                                                                    for="remember-check">Remember
-                                                                                    me
-                                                                                    <input type="checkbox"
-                                                                                          name="remember-check"
-                                                                                          id="remember-check">
-                                                                                    <span class="checkmark"></span>
-                                                                              </label>
-                                                                        </div>
-                                                                        <div class="modal__login-action">
+                                                <!--? Modal Body & Footer -->
+                                                <div class="tab-content">
+                                                      <!-- todo Login -->
+                                                      <div id="modal-login" class="tab-pane active">
+                                                            <div class="modal__login">
+                                                                  <div class="modal__login-body">
+                                                                        <form method="post" class="modal__login-form">
+                                                                              <fieldset>
+                                                                                    <div
+                                                                                          class="modal__login-input d-flex">
+                                                                                          <span>
+                                                                                                <i
+                                                                                                      class="fas fa-user text-white"></i>
+                                                                                          </span>
+                                                                                          <input type="text"
+                                                                                                name="user__login-name"
+                                                                                                id="user__login-name"
+                                                                                                placeholder="User Name"
+                                                                                                required>
+                                                                                    </div>
+                                                                                    <div
+                                                                                          class="modal__login-input d-flex">
+                                                                                          <span>
+                                                                                                <i
+                                                                                                      class="fas fa-user-lock text-white"></i>
+                                                                                          </span>
+                                                                                          <input type="password"
+                                                                                                name="user__login-pwd"
+                                                                                                id="user__login-pwd"
+                                                                                                placeholder="Password"
+                                                                                                required>
+                                                                                    </div>
+                                                                                    <div class="modal__login-check">
+                                                                                          <label class="text-white"
+                                                                                                for="remember-check">Remember
+                                                                                                me
+                                                                                                <input type="checkbox"
+                                                                                                      name="remember-check"
+                                                                                                      id="remember-check">
+                                                                                                <span
+                                                                                                      class="checkmark"></span>
+                                                                                          </label>
+                                                                                    </div>
+                                                                                    <div class="modal__login-action">
+                                                                                          <a href="#"
+                                                                                                class="modal__login-forget d-block">Forgot
+                                                                                                Your Password</a>
+                                                                                          <input class="btn d-block"
+                                                                                                type="submit"
+                                                                                                value="SIGN IN">
+                                                                                    </div>
+                                                                                    <h3
+                                                                                          class="modal__social-heading text-white">
+                                                                                          Sign in width Facebook or
+                                                                                          Google+</h3>
+                                                                              </fieldset>
+                                                                        </form>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="modal__social">
+                                                                  <ul
+                                                                        class="modal__social-list d-flex justify-content-around">
+                                                                        <li class="modal__social-item text-center">
                                                                               <a href="#"
-                                                                                    class="modal__login-forget d-block">Forgot
-                                                                                    Your Password</a>
-                                                                              <input class="btn d-block" type="submit"
-                                                                                    value="SIGN IN">
-                                                                        </div>
-                                                                  </fieldset>
-                                                            </form>
+                                                                                    class="modal__social-link facebook-btn text--uppercase text-white">Facebook</a>
+                                                                        </li>
+                                                                        <li class="modal__social-item text-center">
+                                                                              <a href="#"
+                                                                                    class="modal__social-link facebook-btn text--uppercase text-white">Google+</a>
+                                                                        </li>
+                                                                  </ul>
+                                                            </div>
                                                       </div>
-                                                      <div class="modal__social">
-                                                            <h3 class="modal__social-heading">Sign in width Facebook or
-                                                                  Google+</h3>
-                                                            <ul class="modal__social-list">
-                                                                  <li class="modal__social-item">
-                                                                        <a href="#"
-                                                                              class="modal__social-link facebook-btn text--uppercase">Facebook</a>
-                                                                  </li>
-                                                                  <li class="modal__social-item">
-                                                                        <a href="#"
-                                                                              class="modal__social-link facebook-btn text--uppercase">Google+</a>
-                                                                  </li>
-                                                            </ul>
+                                                      <!-- todo Register -->
+                                                      <div id="modal-register" class="tab-pane">
+                                                            <div class="modal__login">
+                                                                  <div class="modal__login-body">
+                                                                        <form method="post" class="modal__login-form">
+                                                                              <fieldset>
+                                                                                    <!-- User name -->
+                                                                                    <div
+                                                                                          class="modal__login-input d-flex">
+                                                                                          <span>
+                                                                                                <i
+                                                                                                      class="fas fa-user text-white"></i>
+                                                                                          </span>
+                                                                                          <input type="text"
+                                                                                                name="user__login-name"
+                                                                                                id="user__login-registerName"
+                                                                                                placeholder="User Name"
+                                                                                                required>
+                                                                                    </div>
+                                                                                    <!-- Email -->
+                                                                                    <div
+                                                                                          class="modal__login-input d-flex">
+                                                                                          <span>
+                                                                                                <i
+                                                                                                      class="far fa-envelope text-white"></i>
+                                                                                          </span>
+                                                                                          <input type="text"
+                                                                                                name="user__login-name"
+                                                                                                id="user__login-email"
+                                                                                                placeholder="User Name"
+                                                                                                required>
+                                                                                    </div>
+                                                                                    <!-- Password -->
+                                                                                    <div
+                                                                                          class="modal__login-input d-flex">
+                                                                                          <span>
+                                                                                                <i
+                                                                                                      class="bi bi-shield-lock text-white"></i>
+                                                                                          </span>
+                                                                                          <input type="password"
+                                                                                                name="user__login-pwd"
+                                                                                                id="user__login-registerPassword"
+                                                                                                placeholder="Password"
+                                                                                                required>
+                                                                                    </div>
+                                                                                    <!-- Repeat Password -->
+                                                                                    <div
+                                                                                          class="modal__login-input d-flex">
+                                                                                          <span>
+                                                                                                <i
+                                                                                                      class="bi bi-shield-lock text-white"></i>
+                                                                                          </span>
+                                                                                          <input type="password"
+                                                                                                name="user__login-pwd"
+                                                                                                placeholder="Repeat Password"
+                                                                                                required>
+                                                                                    </div>
+                                                                                    <div style="padding-top: 0.1em">
+                                                                                    </div>
+                                                                                    <div class="modal__login-action">
+                                                                                          <input class="btn d-block"
+                                                                                                type="submit"
+                                                                                                value="REGISTER">
+                                                                                    </div>
+                                                                              </fieldset>
+                                                                        </form>
+                                                                  </div>
+                                                            </div>
                                                       </div>
                                                 </div>
                                           </div>
@@ -550,6 +631,42 @@
                         </div>
                   </section>
             </header>
+            <!-- !Carousel -->
+            <section class="container-fluid banner-slider carousel slide" data-bs-ride="carousel">
+                  <!--? The slideshow/carousel -->
+                  <div class="carousel-inner">
+                        <div class="carousel-item active">
+                              <img src="./assets/img/skiing-slider-img-1.jpg" alt="Los Angeles" class="d-block"
+                                    style="width:100%">
+                              <div class="carousel-caption">
+                                    <h2>From Alps</h2>
+                                    <h3>Snow Adventure</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur rem
+                                          adipisci commodi temporibus at obcaecati explicabo aliquam magnam officia
+                                          delectus inventore.</p>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <img src="./assets/img/skiing-slider-img-2.jpg" alt="Chicago" class="d-block"
+                                    style="width:100%">
+                              <div class="carousel-caption">
+                                    <h2>Enjoy Your</h2>
+                                    <h3>Winter Vacation</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur rem
+                                          adipisci commodi temporibus at obcaecati explicabo aliquam magnam officia
+                                          delectus inventore.</p>
+                              </div>
+                        </div>
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                        </button>
+                  </div>
+      </div>
+      </section>
       </div>
 
 

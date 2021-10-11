@@ -50,7 +50,6 @@ headerBarsHeading.forEach((item, index) => {
 });
 
 const subHeaderLinks = document.querySelectorAll('.sub-header__link');
-console.log(subHeaderLinks);
 subHeaderLinks.forEach((item) => {
       item.onclick = () => {
             const subHeaderLinkActive = document.querySelector('.sub-header__link.active-color');
@@ -58,6 +57,17 @@ subHeaderLinks.forEach((item) => {
             item.classList.add('active-color');
       }
 });
+
+// todo Nav tabs Modal
+const modalListBtn = document.querySelectorAll('.modal__list-btn');
+console.log(modalListBtn);
+modalListBtn.forEach((item) => {
+      item.onclick = () => {
+            const modalListBtnHasActive = document.querySelector('.modal__list-btn.active-2');
+            modalListBtnHasActive.classList.remove('active-2');
+            item.classList.add('active-2');
+      }
+})
 
 
 
