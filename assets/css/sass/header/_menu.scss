@@ -32,14 +32,15 @@ header {
                   top: 100%;
                   left: 0;
                   right: 0;
+                  z-index: 99;
                   padding: 0 60px;
                   max-height: 0;
                   display: none;
                   transition: all 0.7s linear;
                   will-change: all;
-                  @include border(bottom);
                   -ms-overflow-style: none;
                   scrollbar-width: none;
+                  background-color: #fff;
 
                   &::-webkit-scrollbar {
                         display: none;

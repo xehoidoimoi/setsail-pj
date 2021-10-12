@@ -6,9 +6,11 @@ barsMenu.addEventListener('click', function (e) {
       console.log('object')
       if (headerBarsList.style.maxHeight) {
             headerBarsList.style.maxHeight = null;
+            headerBarsList.style.borderBottom = '0';
       } else {
             headerBarsList.style.display = 'block';
             headerBarsList.style.overflow = 'scroll';
+            headerBarsList.style.borderBottom = '1px solid #ebebeb';
             headerBarsList.style.maxHeight = headerBarsList.scrollHeight + 'px';
       }
 });

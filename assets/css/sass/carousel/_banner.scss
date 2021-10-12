@@ -1,0 +1,43 @@
+.banner-slider {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 20px;
+
+      &__img {
+            height: 455px;
+            object-fit: cover;
+            animation: scale 5.5s linear;
+            transition: all 0.5s linear;
+      }
+
+      &__caption {
+            bottom: unset;
+            top: 50%;
+            transform: translateY(-50%);
+      }
+
+      &__heading {
+            font-size: 35px;
+            font-family: 'Satisfy', cursive;
+            animation: moveY .45s linear;
+            transition: all 0.45s linear;
+      }
+
+      &__title {
+            font-size: 34px;
+            font-weight: 600;
+            padding: 12px 0;
+            animation: moveY .45s linear;
+            animation-delay: 0.1s;
+            transition: all 0.45s linear;
+      }
+
+      &__desc {
+            line-height: 1.4;
+            font-size: 15px;
+            padding-top: 15px;
+            animation: moveY .45s linear;
+            animation-delay: 0.2s;
+            transition: all 0.45s linear;
+      }
+}

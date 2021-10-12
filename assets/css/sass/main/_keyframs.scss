@@ -1,0 +1,21 @@
+@keyframes scale {
+      from {
+            transform: scale(1)
+      }
+
+      to {
+            transform: scale(1.1)
+      }
+}
+
+@keyframes moveY {
+      0% {
+            opacity: 0.5;
+            transform: translateY(50px)
+      }
+
+      100% {
+            opacity: 1;
+            transform: translateY(0px)
+      }
+}
