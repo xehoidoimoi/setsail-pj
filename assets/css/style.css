@@ -171,6 +171,10 @@ input {
   font-weight: 500 !important;
 }
 
+.bg-primary {
+  background-color: #3fd0d4 !important;
+}
+
 @keyframes scale {
   from {
     transform: scale(1);

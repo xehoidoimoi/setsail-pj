@@ -71,5 +71,15 @@ modalListBtn.forEach((item) => {
       }
 })
 
+// todo Slider Winter
+const swiper = new Swiper("#slider-tour", {
+      slidesPerView: 1,
+      pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+      },
+});
+
 
 
