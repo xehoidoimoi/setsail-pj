@@ -1,5 +1,13 @@
-.slider-winter {
-      padding-left: 0;
-      padding-right: 0;
+.slider-tour {
       margin-bottom: 20px;
+
+      &__info {}
+
+      &__header {
+            @include title(22px);
+      }
+
+      &__body {
+            @include text-clamp(2);
+      }
 }

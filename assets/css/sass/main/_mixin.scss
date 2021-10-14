@@ -49,3 +49,10 @@
       /* The Fallback */
       background: rgba($color, $opacity);
 }
+
+@mixin text-clamp ($clamp) {
+      display: -webkit-box;
+      -webkit-line-clamp: $clamp; // số dòng muốn hiển thị
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+}
