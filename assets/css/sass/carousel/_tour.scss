@@ -1,5 +1,10 @@
 .slider-tour {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+
+      &__item {
+            background-color: #fff;
+            box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.2);
+      }
 
       &__info {}
 
@@ -9,5 +14,15 @@
 
       &__body {
             @include text-clamp(2);
+      }
+
+      &__footer {
+
+            &-price,
+            &-rate,
+            &-score,
+            &-review {
+                  font-weight: 600;
+            }
       }
 }
