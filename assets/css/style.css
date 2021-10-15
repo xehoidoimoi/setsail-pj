@@ -509,7 +509,10 @@ header {
 }
 .slider-tour__item {
   background-color: #fff;
-  box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.2);
+}
+.slider-tour__info {
+  margin-bottom: 6rem;
+  box-shadow: 5px 8px 13.92px 2.08px rgba(0, 0, 0, 0.05);
 }
 .slider-tour__header {
   color: #212121;
@@ -524,6 +527,19 @@ header {
 }
 .slider-tour__footer-price, .slider-tour__footer-rate, .slider-tour__footer-score, .slider-tour__footer-review {
   font-weight: 600;
+}
+.slider-tour__pagination {
+  bottom: 0 !important;
+}
+.slider-tour__pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1 !important;
+  margin-left: 1rem !important;
+  background-color: #3fd0d480;
+}
+.slider-tour__pagination .swiper-pagination-bullet-active {
+  background-color: #3fd0d4;
 }
 
 /*# sourceMappingURL=style.css.map */
