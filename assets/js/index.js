@@ -78,10 +78,10 @@ modalListBtn.forEach((item) => {
 });
 
 // todo Slider Tour
-const swiper = new Swiper("#slider-tour", {
+const swiperTour = new Swiper("#slider-tour", {
   speed: 600,
   // spaceBetween: 15,
-  slidesPerView: 1,
+  slidesPerView: "auto",
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
