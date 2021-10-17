@@ -30,6 +30,14 @@
       color: map.get($text-color, "heading");
 }
 
+@mixin color ($color) {
+      color: map.get($text-color, $color);
+}
+
+@mixin font-satisfy {
+      font-family: 'Satisfy', cursive;
+}
+
 @mixin title ($size) {
       color: #212121;
       font-weight: 600;

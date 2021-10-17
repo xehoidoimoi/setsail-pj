@@ -18,7 +18,7 @@
 
       &__heading {
             font-size: 35px;
-            font-family: 'Satisfy', cursive;
+            @include font-satisfy;
             animation: moveY .45s linear;
             transition: all 0.45s linear;
       }

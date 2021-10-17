@@ -150,6 +150,7 @@ html {
 }
 
 body {
+  color: #505050;
   font-size: 1.4rem;
   line-height: 1.4;
   font-weight: 400;
@@ -542,10 +543,43 @@ header {
   background-color: #3fd0d4;
 }
 
+.winter-sport {
+  padding: 5rem 6rem;
+  margin-bottom: 6rem;
+}
+.winter-sport__heading {
+  font-family: "Satisfy", cursive;
+  color: #3fd0d4;
+  font-size: 33px;
+  line-height: 1.8em;
+}
+.winter-sport__title {
+  color: #212121;
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 4rem;
+  line-height: 1.1em;
+  letter-spacing: -0.05em;
+}
+.winter-sport__video {
+  margin-bottom: 4rem;
+}
 .winter-sport__video-link {
   top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
+}
+.winter-sport__desc {
+  line-height: 1.8em;
+  padding-bottom: 4rem;
+}
+.winter-sport__view-link {
+  outline: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 14px 42px;
+  border-radius: 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

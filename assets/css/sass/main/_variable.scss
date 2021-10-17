@@ -2,6 +2,7 @@ $primary_color: #3fd0d4;
 $text-color: ("text": #efefef,
       "heading": #212121,
       "white": #fff,
+      'primary': $primary_color,
 );
 
 $border-color: #ebebeb;

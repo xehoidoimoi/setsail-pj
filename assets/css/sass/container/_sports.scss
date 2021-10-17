@@ -1,17 +1,48 @@
 .winter-sport {
+      padding: 5rem 6rem;
+      margin-bottom: 6rem;
+
       &__wrapper {}
 
-      &__heading {}
+      &__heading {
+            @include font-satisfy;
+            @include color ('primary');
+            font-size: 33px;
+            line-height: 1.8em;
+      }
 
-      &__title {}
+      &__title {
+            @include title (35px);
+            padding-bottom: 4rem;
+            line-height: 1.1em;
+            letter-spacing: -0.05em;
+      }
 
       &__video {
+            margin-bottom: 4rem;
+
             &-img {}
 
             &-link {
                   top: 50%;
                   left: 50%;
-                  transform: translate(-50%);
+                  transform: translate(-50%, -50%);
             }
+      }
+
+      &__desc {
+            line-height: 1.8em;
+            padding-bottom: 4rem;
+      }
+
+      &__view-more {}
+
+      &__view-link {
+            outline: 0;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 14px 42px;
+            border-radius: 0 !important;
       }
 }

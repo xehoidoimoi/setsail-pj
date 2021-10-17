@@ -885,19 +885,46 @@
                   <div class="swiper-pagination slider-tour__pagination"></div>
             </section>
             <!-- !Winter Sports -->
-            <section class="winter-sport container-fluid mb-5">
+            <section class="winter-sport container-fluid text-center">
                   <div class="winter-sport__wrapper">
                         <h3 class="winter-sport__heading">Try Now</h3>
                         <h2 class="winter-sport__title">Winter Sports</h2>
-                        <div class="winter-sport__video position-relative">
-                              <div class="winter-sport__video-img">
-                                    <img src="./assets/img/h-skiing-video-1.jpg" alt="video-img">
+                        <!-- ? Modal Video -->
+                        <div class="winter-sport__modal">
+                              <!-- Trigger the modal with a div -->
+                              <div class="winter-sport__video position-relative" data-toggle="modal"
+                                    data-target="#myModalSport">
+                                    <div class="winter-sport__video-img">
+                                          <img src="./assets/img/h-skiing-video-1.jpg" alt="video-img">
+                                    </div>
+                                    <a href="https://youtu.be/xd39Ho1kfqc"
+                                          class="winter-sport__video-link position-absolute">
+                                          <span class="winter-sport__img">
+                                                <img src="./assets/img/play-button.png" alt="play button">
+                                          </span>
+                                    </a>
                               </div>
-                              <a href="https://youtu.be/xd39Ho1kfqc" class="winter-sport__video-link position-absolute">
-                                    <span class="winter-sport__img">
-                                          <img src="./assets/img/play-button.png" alt="play button">
-                                    </span>
-                              </a>
+                              <!-- Modal -->
+                              <div class="modal fade" id="myModalSport" role="dialog">
+                                    <div class="modal-dialog">
+                                          <!-- Modal content-->
+                                          <div class="modal-content">
+                                                <video controls>
+                                                      <source src="https://youtu.be/xd39Ho1kfqc" type="video/mp4">
+                                                </video>
+                                                <h3>fhlaksjfhlsfhlsakjfhlsdkf</h3>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <!-- ? End Modal Video -->
+                        <div class="winter-sport__desc">
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, accusantium quam.
+                                    Voluptate dolore molestiae et dolorum! Aperiam ducimus reprehenderit ad est, quidem
+                                    reiciendis, quibusdam earum ex magni iure asperiores ab?</p>
+                        </div>
+                        <div class="winter-sport__view-more">
+                              <a href="#" class="winter-sport__view-link btn text-white bg-primary">View More</a>
                         </div>
                   </div>
             </section>
