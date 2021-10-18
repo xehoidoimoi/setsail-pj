@@ -176,6 +176,12 @@ input {
   background-color: #3fd0d4 !important;
 }
 
+.heading {
+  color: #212121;
+  font-size: 35px;
+  font-weight: 600;
+}
+
 @keyframes scale {
   from {
     transform: scale(1);
@@ -565,6 +571,7 @@ header {
   margin-bottom: 4rem;
 }
 .winter-sport__video-link {
+  pointer-events: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -580,6 +587,61 @@ header {
   font-weight: 600;
   padding: 14px 42px;
   border-radius: 0 !important;
+}
+
+.top-review {
+  height: auto;
+  padding: 25% 0;
+  background-size: cover;
+  background-attachment: scroll;
+  min-height: 200px !important;
+  background-position: center top !important;
+}
+.top-review__info {
+  margin: 0 57px;
+}
+.top-review__heading {
+  padding-bottom: 12px;
+}
+.top-review__desc {
+  font-size: 17px;
+  line-height: 1.7em;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.top-review__item {
+  margin: 25px 0;
+  border-radius: 8px;
+}
+
+.top-review__user {
+  margin: 0 15px;
+  padding: 51px 0 33px 0;
+}
+.top-review__user-avatar img {
+  margin: 0 auto;
+}
+.top-review__user-city {
+  margin-bottom: 8px;
+}
+.top-review__user-link {
+  color: #212121;
+  font-weight: 600;
+  font-size: 22px;
+}
+.top-review__user-rate {
+  display: block;
+  margin-bottom: 12px;
+}
+.top-review__user-comment {
+  line-height: 1.7em;
+  margin-bottom: 12px;
+}
+.top-review__user-name {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

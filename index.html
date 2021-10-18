@@ -892,8 +892,8 @@
                         <!-- ? Modal Video -->
                         <div class="winter-sport__modal">
                               <!-- Trigger the modal with a div -->
-                              <div class="winter-sport__video position-relative" data-toggle="modal"
-                                    data-target="#myModalSport">
+                              <div class="winter-sport__video position-relative" data-bs-toggle="modal"
+                                    data-bs-target="#myModalSport">
                                     <div class="winter-sport__video-img">
                                           <img src="./assets/img/h-skiing-video-1.jpg" alt="video-img">
                                     </div>
@@ -906,13 +906,14 @@
                               </div>
                               <!-- Modal -->
                               <div class="modal fade" id="myModalSport" role="dialog">
-                                    <div class="modal-dialog">
+                                    <div class="modal-dialog modal-dialog-centered">
                                           <!-- Modal content-->
                                           <div class="modal-content">
-                                                <video controls>
-                                                      <source src="https://youtu.be/xd39Ho1kfqc" type="video/mp4">
-                                                </video>
-                                                <h3>fhlaksjfhlsfhlsakjfhlsdkf</h3>
+                                                <iframe width="auto" height="auto"
+                                                      src="https://www.youtube.com/embed/CQlatm6yAzQ?rel=1&autoplay=1"
+                                                      title="YouTube video player" frameborder="0"
+                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                      allowfullscreen></iframe>
                                           </div>
                                     </div>
                               </div>
@@ -928,8 +929,175 @@
                         </div>
                   </div>
             </section>
-      </div>
-      </section>
+            <!-- !Top Review -->
+            <section class="top-review" style='background-image: url(./assets/img/skiing-parallax-1.jpg)'>
+                  <div class="top-review__content text-center">
+                        <div class="top-review__info">
+                              <h3 class="top-review__heading text-white heading">Top Reviews</h3>
+                              <p class="top-review__desc text-white">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Placeat
+                                    dignissimos maiores laudantium aspernatur itaque neque porro, ab cupiditate
+                                    provident
+                                    cumque mollitia eius explicabo voluptas fuga, similique, qui voluptates. Ipsam,
+                                    fugiat!
+                              </p>
+                        </div>
+                        <div id="top-review" class="swiper mySwiper top-review__slider">
+                              <div class="swiper-wrapper top-review__wrapper">
+                                    <div class="swiper-slide top-review__item bg-white">
+                                          <div class="top-review__user">
+                                                <div class="top-review__user-avatar">
+                                                      <img src="./assets/img/user-img-1.png" alt="user-avatar">
+                                                </div>
+                                                <h4 class="top-review__user-city">
+                                                      <a class="top-review__user-link" href="#">Beautiful
+                                                            Holland</a>
+                                                </h4>
+                                                <span class="top-review__user-rate active-color">
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                </span>
+                                                <p class="top-review__user-comment">
+                                                      Sa etor aviues lmpedlt tes, vof ef nihc agem qupaios. Ai
+                                                      apvy </p>
+                                                <h6 class="top-review__user-name">
+                                                      Carol Silva </h6>
+                                          </div>
+                                    </div>
+                                    <div class="swiper-slide top-review__item bg-white">
+                                          <div class="top-review__user">
+                                                <div class="top-review__user-avatar">
+                                                      <img src="./assets/img/user-img-2.png" alt="user-avatar">
+                                                </div>
+                                                <h4 class="top-review__user-city">
+                                                      <a class="top-review__user-link" href="#">Temple Tour</a>
+                                                </h4>
+                                                <span class="top-review__user-rate active-color">
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                </span>
+                                                <p class="top-review__user-comment">
+                                                      Te utar uvlues iwqodit tas, vut et nihc egam yubulas. Ei euvy </p>
+                                                <h6 class="top-review__user-name">
+                                                      Carl Moore </h6>
+                                          </div>
+                                    </div>
+                                    <div class="swiper-slide top-review__item bg-white">
+                                          <div class="top-review__user">
+                                                <div class="top-review__user-avatar">
+                                                      <img src="./assets/img/user-img-3.png" alt="user-avatar">
+                                                </div>
+                                                <h4 class="top-review__user-city">
+                                                      <a class="top-review__user-link" href="#">Holland Canals</a>
+                                                </h4>
+                                                <span class="top-review__user-rate active-color">
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                </span>
+                                                <p class="top-review__user-comment">
+                                                      Te utar uvlues iwqodit tas, vut et nihc egam yubulas. Ei euvy </p>
+                                                <h6 class="top-review__user-name">
+                                                      Ema Cooper </h6>
+                                          </div>
+                                    </div>
+                                    <div class="swiper-slide top-review__item bg-white">
+                                          <div class="top-review__user">
+                                                <div class="top-review__user-avatar">
+                                                      <img src="./assets/img/user-img-4.png" alt="user-avatar">
+                                                </div>
+                                                <h4 class="top-review__user-city">
+                                                      <a class="top-review__user-link" href="#">Holland Canals</a>
+                                                </h4>
+                                                <span class="top-review__user-rate active-color">
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                </span>
+                                                <p class="top-review__user-comment">
+                                                      Te utar uvlues iwqodit tas, vut et nihc egam yubulas. Ei euvy </p>
+                                                <h6 class="top-review__user-name">
+                                                      Ema Cooper </h6>
+                                          </div>
+                                    </div>
+                                    <div class="swiper-slide top-review__item bg-white">
+                                          <div class="top-review__user">
+                                                <div class="top-review__user-avatar">
+                                                      <img src="./assets/img/user-img-5.png" alt="user-avatar">
+                                                </div>
+                                                <h4 class="top-review__user-city">
+                                                      <a class="top-review__user-link" href="#">Holland Canals</a>
+                                                </h4>
+                                                <span class="top-review__user-rate active-color">
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                </span>
+                                                <p class="top-review__user-comment">
+                                                      Te utar uvlues iwqodit tas, vut et nihc egam yubulas. Ei euvy </p>
+                                                <h6 class="top-review__user-name">
+                                                      Ema Cooper </h6>
+                                          </div>
+                                    </div>
+                                    <div class="swiper-slide top-review__item bg-white">
+                                          <div class="top-review__user">
+                                                <div class="top-review__user-avatar">
+                                                      <img src="./assets/img/user-img-6.png" alt="user-avatar">
+                                                </div>
+                                                <h4 class="top-review__user-city">
+                                                      <a class="top-review__user-link" href="#">Holland Canals</a>
+                                                </h4>
+                                                <span class="top-review__user-rate active-color">
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                </span>
+                                                <p class="top-review__user-comment">
+                                                      Te utar uvlues iwqodit tas, vut et nihc egam yubulas. Ei euvy </p>
+                                                <h6 class="top-review__user-name">
+                                                      Ema Cooper </h6>
+                                          </div>
+                                    </div>
+                                    <div class="swiper-slide top-review__item bg-white">
+                                          <div class="top-review__user">
+                                                <div class="top-review__user-avatar">
+                                                      <img src="./assets/img/user-img-7.png" alt="user-avatar">
+                                                </div>
+                                                <h4 class="top-review__user-city">
+                                                      <a class="top-review__user-link" href="#">Holland Canals</a>
+                                                </h4>
+                                                <span class="top-review__user-rate active-color">
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                      <i class="fas fa-star"></i>
+                                                </span>
+                                                <p class="top-review__user-comment">
+                                                      Te utar uvlues iwqodit tas, vut et nihc egam yubulas. Ei euvy </p>
+                                                <h6 class="top-review__user-name">
+                                                      Ema Cooper </h6>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
       </div>
 
 

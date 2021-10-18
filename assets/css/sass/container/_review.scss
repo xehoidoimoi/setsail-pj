@@ -1,0 +1,65 @@
+.top-review {
+      height: auto;
+      padding: 25% 0;
+      background-size: cover;
+      background-attachment: scroll;
+      min-height: 200px !important;
+      background-position: center top !important;
+
+      &__content {}
+
+      &__info {
+            margin: 0 57px;
+      }
+
+      &__heading {
+            padding-bottom: 12px;
+      }
+
+      &__desc {
+            font-size: 17px;
+            line-height: 1.7em;
+            @include text-clamp(4);
+            margin-bottom: 12px;
+      }
+
+      &__item {
+            margin: 25px 0;
+            border-radius: 8px;
+      }
+}
+
+// todo Review User Slider
+.top-review__user {
+      margin: 0 15px;
+      padding: 51px 0 33px 0;
+
+      &-avatar {
+            img {
+                  margin: 0 auto;
+            }
+      }
+
+      &-city {
+
+            margin-bottom: 8px;
+      }
+
+      &-link {
+            @include title (22px);
+      }
+
+      &-rate {
+            display: block;
+            margin-bottom: 12px;
+      }
+
+      &-comment {
+            line-height: 1.7em;
+            margin-bottom: 12px;
+      }
+
+      &-name {
+            font-weight: 600;
+      }
+}

@@ -38,7 +38,7 @@
       font-family: 'Satisfy', cursive;
 }
 
-@mixin title ($size) {
+@mixin title ($size: 35px) {
       color: #212121;
       font-weight: 600;
       font-size: $size;

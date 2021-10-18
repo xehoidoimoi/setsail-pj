@@ -90,4 +90,21 @@ const swiperTour = new Swiper("#slider-tour", {
   autoplay: {
     delay: 5000,
   },
+  loop: true,
+});
+
+// todo Slider Top Review
+const swiperTopReview = new Swiper("#top-review", {
+  speed: 600,
+  spaceBetween: 15,
+  slidesPerView: "auto",
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   type: "bullets",
+  //   clickable: true,
+  // },
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
 });
