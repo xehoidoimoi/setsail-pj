@@ -11,6 +11,10 @@ $border-color: #ebebeb;
       color: $primary_color !important;
 }
 
+.center {
+      margin: 0 auto;
+}
+
 .font-weight {
       font-weight: 500 !important;
 }
@@ -23,4 +27,30 @@ $border-color: #ebebeb;
       color: #212121;
       font-size: 35px;
       font-weight: 600;
+}
+
+.winter-heading {
+      font-family: "Satisfy", cursive;
+      color: #3fd0d4;
+      font-size: 33px;
+      line-height: 1.8em;
+}
+
+.winter-title {
+      color: #212121;
+      font-weight: 600;
+      font-size: 35px;
+      padding-bottom: 1.8rem;
+      line-height: 1.1em;
+      letter-spacing: -0.05em;
+}
+
+.winter-padding {
+      padding: 5rem 6rem;
+      margin-bottom: 6rem;
+}
+
+.section-padding {
+      padding-top: 50px;
+      padding-bottom: 50px;
 }

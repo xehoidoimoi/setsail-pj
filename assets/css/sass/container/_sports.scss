@@ -1,21 +1,7 @@
 .winter-sport {
-      padding: 5rem 6rem;
-      margin-bottom: 6rem;
-
-      &__wrapper {}
-
-      &__heading {
-            @include font-satisfy;
-            @include color ('primary');
-            font-size: 33px;
-            line-height: 1.8em;
-      }
 
       &__title {
-            @include title (35px);
             padding-bottom: 4rem;
-            line-height: 1.1em;
-            letter-spacing: -0.05em;
       }
 
       &__video {
@@ -35,8 +21,6 @@
             line-height: 1.8em;
             padding-bottom: 4rem;
       }
-
-      &__view-more {}
 
       &__view-link {
             outline: 0;

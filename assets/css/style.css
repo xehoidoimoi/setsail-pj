@@ -152,7 +152,7 @@ html {
 body {
   color: #505050;
   font-size: 1.4rem;
-  line-height: 1.4;
+  line-height: 1.8em;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
@@ -168,6 +168,10 @@ input {
   color: #3fd0d4 !important;
 }
 
+.center {
+  margin: 0 auto;
+}
+
 .font-weight {
   font-weight: 500 !important;
 }
@@ -180,6 +184,32 @@ input {
   color: #212121;
   font-size: 35px;
   font-weight: 600;
+}
+
+.winter-heading {
+  font-family: "Satisfy", cursive;
+  color: #3fd0d4;
+  font-size: 33px;
+  line-height: 1.8em;
+}
+
+.winter-title {
+  color: #212121;
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 1.8rem;
+  line-height: 1.1em;
+  letter-spacing: -0.05em;
+}
+
+.winter-padding {
+  padding: 5rem 6rem;
+  margin-bottom: 6rem;
+}
+
+.section-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @keyframes scale {
@@ -549,23 +579,8 @@ header {
   background-color: #3fd0d4;
 }
 
-.winter-sport {
-  padding: 5rem 6rem;
-  margin-bottom: 6rem;
-}
-.winter-sport__heading {
-  font-family: "Satisfy", cursive;
-  color: #3fd0d4;
-  font-size: 33px;
-  line-height: 1.8em;
-}
 .winter-sport__title {
-  color: #212121;
-  font-weight: 600;
-  font-size: 35px;
   padding-bottom: 4rem;
-  line-height: 1.1em;
-  letter-spacing: -0.05em;
 }
 .winter-sport__video {
   margin-bottom: 4rem;
@@ -642,6 +657,38 @@ header {
 }
 .top-review__user-name {
   font-weight: 600;
+}
+
+.winter-holiday__info {
+  padding: 7rem 0 3rem 0;
+}
+.winter-holiday__desc {
+  font-size: 17px;
+  line-height: 28px;
+}
+.winter-holiday__list {
+  padding: 1rem;
+}
+.winter-holiday__item {
+  padding: 18px 0;
+  margin-bottom: 12px;
+}
+.winter-holiday__item-img {
+  display: block;
+  margin-bottom: 12px;
+}
+.winter-holiday__item-img img {
+  padding: 8px 0;
+}
+.winter-holiday__item-img:hover {
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+.winter-holiday__item-heading {
+  padding: 12px 0;
+  color: #212121;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

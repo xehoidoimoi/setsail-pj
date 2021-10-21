@@ -1,0 +1,39 @@
+.winter-holiday {
+
+      &__info {
+            padding: 7rem 0 3rem 0;
+      }
+
+      &__desc {
+            font-size: 17px;
+            line-height: 28px;
+      }
+
+      &__list {
+            padding: 1rem;
+      }
+
+      &__item {
+            padding: 18px 0;
+            margin-bottom: 12px;
+
+            &-img {
+                  display: block;
+                  margin-bottom: 12px;
+
+                  img {
+                        padding: 8px 0;
+                  }
+
+                  &:hover {
+                        transition: 0.3s;
+                        transform: translateY(-5px);
+                  }
+            }
+
+            &-heading {
+                  padding: 12px 0;
+                  @include title (18px);
+            }
+      }
+}
