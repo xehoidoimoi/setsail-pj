@@ -691,4 +691,35 @@ header {
   font-size: 18px;
 }
 
+.member-item {
+  overflow: hidden;
+}
+.member-item:hover .member-item__info {
+  transform: translateY(0%);
+  display: block !important;
+}
+.member-item__info {
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+  padding: 22px 25px 26px;
+}
+.member-item__name {
+  color: #212121;
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 12px;
+}
+.member-item__desc {
+  padding-bottom: 12px;
+}
+.member-item__social-icon {
+  padding-right: 24px;
+}
+.member-item__social-icon a {
+  padding: 2px;
+}
+.member-item__social-icon a i {
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */

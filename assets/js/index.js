@@ -108,3 +108,18 @@ const swiperTopReview = new Swiper("#top-review", {
   },
   loop: true,
 });
+
+// todo Slider Our team
+const ourTeam = new Swiper("#our-team__slider", {
+  speed: 600,
+  slidesPerView: "auto",
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   type: "bullets",
+  //   clickable: true,
+  // },
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
+});
