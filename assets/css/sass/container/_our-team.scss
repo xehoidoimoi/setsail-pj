@@ -35,3 +35,30 @@
             }
       }
 }
+
+// ? Our team Count
+.our-team__count {
+      background-color: #3abdc1;
+      padding: 36px 24px;
+
+      &-list {
+            padding: 24px;
+      }
+
+      &-item {
+            padding: 24px 0;
+
+            span {
+                  font-size: 65px;
+                  font-weight: 600;
+                  line-height: 50px;
+                  letter-spacing: -.05em;
+            }
+
+            p {
+                  font-size: 18px;
+                  font-weight: 600;
+                  padding-top: 36px;
+            }
+      }
+}

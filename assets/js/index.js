@@ -123,3 +123,9 @@ const ourTeam = new Swiper("#our-team__slider", {
   },
   loop: true,
 });
+
+// todo Count up
+$(".counter").countUp({
+  time: 1000,
+  delay: 20,
+});
