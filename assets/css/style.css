@@ -186,6 +186,11 @@ input {
   font-weight: 600;
 }
 
+.heading-2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .winter-heading {
   font-family: "Satisfy", cursive;
   color: #3fd0d4;
@@ -781,6 +786,25 @@ header {
 }
 .winter-resort__start i {
   font-size: 12px;
+}
+
+.footer-color-link {
+  color: #a9a9a9;
+}
+
+.footer {
+  padding: 12px 0px;
+  background-color: #212121;
+}
+.footer__list {
+  margin: 24px 36px;
+}
+.footer__desc {
+  font-size: 17px;
+  line-height: 1.8;
+}
+.footer__contact i {
+  min-width: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+.footer-color-link {
+      color: #a9a9a9;
+}
+
+.footer {
+      padding: 12px 0px;
+      background-color: #212121;
+
+      &__list {
+            margin: 24px 36px;
+      }
+
+      &__desc {
+            font-size: 17px;
+            line-height: 1.8;
+      }
+
+      &__contact {
+            i {
+                  min-width: 24px;
+            }
+      }
+}

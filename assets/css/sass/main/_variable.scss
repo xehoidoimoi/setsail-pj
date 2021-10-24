@@ -1,6 +1,7 @@
 $primary_color: #3fd0d4;
+$secondary_color: #212121;
 $text-color: ("text": #efefef,
-      "heading": #212121,
+      "heading": $secondary_color,
       "white": #fff,
       'primary': $primary_color,
 );
@@ -24,8 +25,13 @@ $border-color: #ebebeb;
 }
 
 .heading {
-      color: #212121;
+      color: $secondary_color;
       font-size: 35px;
+      font-weight: 600;
+}
+
+.heading-2 {
+      font-size: 18px;
       font-weight: 600;
 }
 
@@ -37,7 +43,7 @@ $border-color: #ebebeb;
 }
 
 .winter-title {
-      color: #212121;
+      color: $secondary_color;
       font-weight: 600;
       font-size: 35px;
       padding-bottom: 1.8rem;
