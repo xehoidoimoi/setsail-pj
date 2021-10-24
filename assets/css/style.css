@@ -744,4 +744,43 @@ header {
   padding-top: 36px;
 }
 
+.winter-resort__item {
+  margin: 50px 0;
+}
+.winter-resort__link {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+.winter-resort__text {
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.winter-resort__text h5 {
+  font-size: 38px;
+  font-weight: 100;
+  font-family: "Satisfy", cursive;
+}
+.winter-resort__start {
+  --height: 47px;
+  width: 47px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 50%;
+  top: 14%;
+  right: 0;
+}
+.winter-resort__start i {
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=style.css.map */
