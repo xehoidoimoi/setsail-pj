@@ -28,7 +28,7 @@
 <body>
       <div class="main">
             <!-- !Header -->
-            <header class="container-fluid position-relative">
+            <header id="header" class="container-fluid position-relative">
                   <section class="header container align-items-center">
                         <div class="header__bars ">
                               <div class="header__bars-menu">
@@ -1406,31 +1406,45 @@
                         <li class="footer__item pb-5">
                               <h3 class="footer__item-heading heading-2 text-white pb-4">Subscribe to our Newsletter
                               </h3>
-                              <div class="footer__item-desc footer-color-link">Etiam rhoncus. Maecenas temp us, tellus
+                              <div class="footer__item-desc footer-color-link pb-4">Etiam rhoncus. Maecenas temp us,
+                                    tellus
                                     eget condimentum rho</div>
-                              <form method="post" class="modal__login-form">
+                              <form method="post" class="footer__subscribe-form pt-3">
                                     <fieldset>
-                                          <div class="modal__login-input d-flex">
+                                          <div class="footer__subscribe-input d-flex">
                                                 <span>
                                                       <i class="fas fa-user text-white"></i>
                                                 </span>
-                                                <input type="text" name="user__login-name" id="user__login-name"
+                                                <input type="text" name="user__subscribe-name" id="user__subscribe-name"
                                                       placeholder="Name" required>
                                           </div>
-                                          <div class="modal__login-input d-flex">
+                                          <div class="footer__subscribe-input d-flex">
                                                 <span>
                                                       <i class="fas fa-user-lock text-white"></i>
                                                 </span>
-                                                <input type="password" name="user__login-pwd" id="user__login-pwd"
-                                                      placeholder="Email" required>
+                                                <input type="password" name="user__subscribe-pwd"
+                                                      id="user__subscribe-pwd" placeholder="Email" required>
                                           </div>
-                                          <div class="modal__login-action">
-                                                <input class="btn d-block" type="submit" value="SUBSCRIBE">
+                                          <div class="footer__subscribe-action">
+                                                <input class="btn d-block text-white bg-primary" type="submit"
+                                                      value="SUBSCRIBE">
                                           </div>
                                     </fieldset>
                               </form>
                         </li>
+                        <li class="footer__item pb-5">
+                              <h3 class="footer__item-heading heading-2 text-white pb-4">Our Instagram</h3>
+                              <div class="footer__item-desc footer-color-link pb-4">
+                                    Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</div>
+                        </li>
                   </ul>
+                  <div class="footer__bottom-holder text-center pb-4">
+                        <p class="footer-color-link">Powered by @ <a class="text-white" href="#" target="_blank">Qode
+                                    Interactive 2018</a></p>
+                  </div>
+                  <div class="nav-top position-fixed">
+                        <span>TOP</span>
+                  </div>
             </footer>
       </div>
 

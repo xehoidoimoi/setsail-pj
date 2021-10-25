@@ -129,3 +129,40 @@ $(".counter").countUp({
   time: 1000,
   delay: 20,
 });
+
+// todo Nav top
+const navTop = document.querySelector('.nav-top');
+const navHeader = document.querySelector('#header');
+console.log(navHeader)
+// * Scroll to top when clicked
+navTop.onclick = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+// * Auto hide/show when scroll
+window.onscroll = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    navTop.style.display = 'block';
+    // navHeader.style.top = '0';
+  } else {
+    navTop.style.display = 'none';
+    // navHeader.style.top = '-50px';
+  }
+}
+// todo Auto show Nav header when scroll
+let lastScrollTop = 0;
+const headerMenu = document.querySelector('.header');
+window.onscroll = () => {
+  let scrollTop = document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {//scroll down
+    headerMenu.style.position = 'relative';
+    headerMenu.style.transform = 'translateY(-100%)';
+    headerMenu.parentElement.style.marginBottom = 0 + 'px';
+  } else {//scroll up
+    headerMenu.style.position = 'fixed';
+    headerMenu.style.transform = 'translateY(0%)';
+    headerMenu.parentElement.style.marginBottom = 69 + 'px';
+    console.log('scroll up')
+  }
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}

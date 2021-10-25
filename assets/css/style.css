@@ -244,6 +244,11 @@ header {
   display: flex;
   justify-content: space-around;
   padding: 0px 20px;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease-in-out;
+  background-color: #3fd0d4;
 }
 .header__bars, .header__user {
   flex: 0;
@@ -805,6 +810,60 @@ header {
 }
 .footer__contact i {
   min-width: 24px;
+}
+.footer__subscribe-input {
+  padding: 13px 16px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-bottom: 6px;
+}
+.footer__subscribe-input input::placeholder {
+  color: #fff;
+}
+.footer__subscribe-input input::-ms-input-placeholder {
+  color: #fff;
+}
+.footer__subscribe-input input:-ms-input-placeholder {
+  color: #fff;
+}
+.footer__subscribe-input span {
+  min-width: 30px;
+  padding-left: 2px;
+  display: inline-block;
+}
+.footer__subscribe-input input {
+  flex: 1;
+  color: #fff;
+}
+.footer__subscribe-action {
+  margin-bottom: 12px;
+}
+.footer__subscribe-action input {
+  width: 100%;
+  font-size: 13px;
+  padding: 14px 0;
+  border-radius: 0;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+.nav-top {
+  z-index: 99;
+  --height: 60px;
+  bottom: 33px;
+  right: 20px;
+  width: 60px;
+  height: var(--height);
+  line-height: var(--height);
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-in-out;
+}
+.nav-top span {
+  color: #3fd0d4;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
