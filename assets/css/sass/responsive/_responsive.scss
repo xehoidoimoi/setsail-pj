@@ -1,0 +1,74 @@
+// todo Tablet
+@media (min-width:768px) {
+
+      // ! Carousel Banner
+      .banner-slider {
+
+            &__img {
+                  height: 630px;
+            }
+
+            &__caption {
+                  right: 8%;
+                  left: 8%;
+            }
+
+            &__heading {
+                  font-size: 48px;
+                  line-height: 80px;
+            }
+
+            &__title {
+                  font-size: 82px;
+                  line-height: 60px;
+                  letter-spacing: -.4rem;
+            }
+
+            &__desc {
+                  font-size: 17px;
+                  max-width: 580px;
+                  margin: 0 auto;
+            }
+      }
+
+      // ! Winter Sport
+      .winter-sport {
+            &__title {
+                  font-size: 58px;
+            }
+
+            &__modal-dialog {
+                  max-width: 700px;
+            }
+
+            &__modal-content {
+                  padding-top: 56.25%;
+
+                  iframe {
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        position: absolute;
+                  }
+            }
+      }
+
+      // ! Winter Resort
+      .winter-resort {
+            &__title {
+                  font-size: 58px;
+            }
+
+            &__desc {
+                  padding: 0 12px;
+            }
+
+            &__item {
+                  padding: 0 24px;
+            }
+      }
+}

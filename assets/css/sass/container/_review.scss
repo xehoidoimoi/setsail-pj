@@ -6,8 +6,6 @@
       min-height: 200px !important;
       background-position: center top !important;
 
-      &__content {}
-
       &__info {
             margin: 0 57px;
       }
@@ -26,6 +24,27 @@
       &__item {
             margin: 25px 0;
             border-radius: 8px;
+      }
+
+      &__slider {
+            overflow: unset !important;
+      }
+
+      &__pagination {
+            margin-top: 48px;
+            bottom: -40px !important;
+
+            .swiper-pagination-bullet {
+                  width: 12px;
+                  height: 12px;
+                  opacity: 1 !important;
+                  margin-left: 1rem !important;
+                  background-color: #3fd0d480;
+            }
+
+            .swiper-pagination-bullet-active {
+                  background-color: $primary_color;
+            }
       }
 }
 

@@ -5,13 +5,14 @@ header {
 }
 
 .header {
-      min-height: 69px;
-      display: flex;
-      justify-content: space-around;
-      padding: 0px 20px;
-      z-index: 9999;
       top: 0;
       left: 0;
+      display: flex;
+      z-index: 9999;
+      min-height: 69px;
+      max-width: 100%;
+      padding: 0px 20px;
+      justify-content: space-around;
       transition: all 0.35s ease-in-out;
       background-color: #3fd0d4;
 

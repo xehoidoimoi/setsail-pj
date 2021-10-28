@@ -638,7 +638,7 @@
             </header>
             <!-- !Carousel Banner-->
             <section id='carousel-banner' class="container-fluid banner-slider carousel slide carousel-fade"
-                  data-bs-ride="carousel">
+                  data-bs-ride="">
                   <!--? The slideshow/carousel -->
                   <div class="carousel-inner banner-list">
                         <div class="carousel-item banner-slider__item active">
@@ -664,11 +664,11 @@
                               </div>
                         </div>
                         <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev banner-slider__control banner-slider__control-prev"
+                        <button class="carousel-control-prev banner-slider__control d-none banner-slider__control-prev"
                               type="button" data-bs-target="#carousel-banner" data-bs-slide="prev">
                               <span class="carousel-control-prev-icon"></span>
                         </button>
-                        <button class="carousel-control-next banner-slider__control banner-slider__control-next"
+                        <button class="carousel-control-next banner-slider__control d-none banner-slider__control-next"
                               type="button" data-bs-target="#carousel-banner" data-bs-slide="next">
                               <span class="carousel-control-next-icon"></span>
                         </button>
@@ -904,11 +904,11 @@
                                           </span>
                                     </a>
                               </div>
-                              <!-- Modal -->
+                              <!--? Modal -->
                               <div class="modal fade" id="myModalSport" role="dialog">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                          <!-- Modal content-->
-                                          <div class="modal-content">
+                                    <div class="modal-dialog modal-dialog-centered winter-sport__modal-dialog">
+                                          <!--? Modal content-->
+                                          <div class="modal-content winter-sport__modal-content">
                                                 <iframe width="auto" height="auto"
                                                       src="https://www.youtube.com/embed/CQlatm6yAzQ?rel=1&autoplay=1"
                                                       title="YouTube video player" frameborder="0"
@@ -1095,6 +1095,7 @@
                                           </div>
                                     </div>
                               </div>
+                              <div class="swiper-pagination top-review__pagination"></div>
                         </div>
                   </div>
             </section>
@@ -1282,26 +1283,26 @@
                   </div>
                   <!-- ?Our Team Count -->
                   <div class="our-team__count">
-                        <ul class="our-team__count-list text-center">
-                              <li class="our-team__count-item">
+                        <ul class="our-team__count-list text-center row">
+                              <li class="our-team__count-item col-md-6">
                                     <span class="counter text-white d-block">
                                           452
                                     </span>
                                     <p class="text-white">Tourists</p>
                               </li>
-                              <li class="our-team__count-item">
+                              <li class="our-team__count-item col-md-6">
                                     <span class="counter text-white d-block">
                                           120
                                     </span>
                                     <p class="text-white">Years</p>
                               </li>
-                              <li class="our-team__count-item">
+                              <li class="our-team__count-item col-md-6">
                                     <span class="counter text-white d-block">
                                           283
                                     </span>
                                     <p class="text-white">Cottages</p>
                               </li>
-                              <li class="our-team__count-item">
+                              <li class="our-team__count-item col-md-6">
                                     <span class="counter text-white d-block">
                                           197
                                     </span>
@@ -1323,47 +1324,62 @@
                                     dolor lorem ipsum. </p>
                         </div>
                         <!-- ?Winter Resort Image -->
-                        <ul class="winter-resort__list">
-                              <li class="winter-resort__item position-relative">
-                                    <div href="#" class="winter-resort__image">
+                        <ul class="winter-resort__list row">
+                              <li class="winter-resort__item col-md-6 position-relative">
+                                    <div href="#" class="winter-resort__image position-relative">
                                           <img class="winter-resort__img rounded-circle"
                                                 src="./assets/img/destinations-featured-img-8-1.jpg" alt="img">
+                                          <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
+                                          <div class="winter-resort__text position-absolute text-white">
+                                                <h5>Slovenia</h5>
+                                          </div>
                                     </div>
-                                    <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
+                                    <!-- <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
                                     <div class="winter-resort__text position-absolute text-white">
                                           <h5>Slovenia</h5>
-                                    </div>
+                                    </div> -->
                               </li>
-                              <li class="winter-resort__item position-relative">
-                                    <div href="#" class="winter-resort__image">
+                              <li class="winter-resort__item col-md-6 position-relative">
+                                    <div href="#" class="winter-resort__image position-relative">
                                           <img class="winter-resort__img rounded-circle"
                                                 src="./assets/img/destinations-featured-img-9-1.jpg" alt="img">
+                                          <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
+                                          <div class="winter-resort__text position-absolute text-white">
+                                                <h5>France</h5>
+                                          </div>
+                                          <span class="winter-resort__start bg-primary position-absolute">
+                                                <i class="fas fa-star text-white"></i>
+                                          </span>
                                     </div>
-                                    <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
+                                    <!-- <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
                                     <div class="winter-resort__text position-absolute text-white">
                                           <h5>France</h5>
-                                    </div>
-                                    <span class="winter-resort__start bg-primary position-absolute">
+                                    </div> -->
+                                    <!-- <span class="winter-resort__start bg-primary position-absolute">
                                           <i class="fas fa-star text-white"></i>
-                                    </span>
+                                    </span> -->
                               </li>
-                              <li class="winter-resort__item position-relative">
-                                    <div href="#" class="winter-resort__image">
+                              <li class="winter-resort__item col-md-6 position-relative">
+                                    <div href="#" class="winter-resort__image position-relative">
                                           <img class="winter-resort__img rounded-circle"
                                                 src="./assets/img/destinations-featured-img-10-1.jpg" alt="img">
+                                          <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
+                                          <div class="winter-resort__text position-absolute text-white">
+                                                <h5>Switzerland</h5>
+                                          </div>
                                     </div>
-                                    <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
+                                    <!-- <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
                                     <div class="winter-resort__text position-absolute text-white">
                                           <h5>Switzerland</h5>
-                                    </div>
+                                    </div> -->
                               </li>
                         </ul>
                   </div>
             </section>
             <!-- ! FOOTER -->
             <footer class="footer">
-                  <ul class="footer__list section-padding">
-                        <li class="footer__item pb-5">
+                  <ul class="footer__list section-padding row gx-md-5">
+                        <li class="footer__item col-md-6 pb-5">
                               <a href="#" class="footer__logo pb-4 d-block">
                                     <img src="./assets/img/logo-footer.png" alt="footer__logo">
                               </a>
@@ -1382,7 +1398,7 @@
                                     <span class="text-white">Broadway & Morris St, New York</span>
                               </a>
                         </li>
-                        <li class="footer__item pb-5">
+                        <li class="footer__item col-md-6 pb-5">
                               <h3 class="footer__item-heading heading-2 text-white pb-4">Our Recent Posts</h3>
                               <div class="footer__item-content pb-4">
                                     <a href="#" class="footer__item-link footer-color-link pb-3">
@@ -1403,7 +1419,7 @@
                                           September 7, 2016 </div>
                               </div>
                         </li>
-                        <li class="footer__item pb-5">
+                        <li class="footer__item col-md-6 pb-5">
                               <h3 class="footer__item-heading heading-2 text-white pb-4">Subscribe to our Newsletter
                               </h3>
                               <div class="footer__item-desc footer-color-link pb-4">Etiam rhoncus. Maecenas temp us,
@@ -1432,7 +1448,7 @@
                                     </fieldset>
                               </form>
                         </li>
-                        <li class="footer__item pb-5">
+                        <li class="footer__item col-md-6 pb-5">
                               <h3 class="footer__item-heading heading-2 text-white pb-4">Our Instagram</h3>
                               <div class="footer__item-desc footer-color-link pb-4">
                                     Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</div>

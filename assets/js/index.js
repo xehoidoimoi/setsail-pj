@@ -91,22 +91,41 @@ const swiperTour = new Swiper("#slider-tour", {
     delay: 5000,
   },
   loop: true,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+    }
+  }
 });
 
 // todo Slider Top Review
 const swiperTopReview = new Swiper("#top-review", {
-  speed: 600,
+  speed: 1200,
   spaceBetween: 15,
   slidesPerView: "auto",
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   type: "bullets",
-  //   clickable: true,
-  // },
   autoplay: {
     delay: 5000,
   },
   loop: true,
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+      slidesPerGroup: 2,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+    }
+  }
 });
 
 // todo Slider Our team
@@ -122,6 +141,13 @@ const ourTeam = new Swiper("#our-team__slider", {
     delay: 5000,
   },
   loop: true,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+    }
+  }
 });
 
 // todo Count up
@@ -154,15 +180,16 @@ let lastScrollTop = 0;
 const headerMenu = document.querySelector('.header');
 window.onscroll = () => {
   let scrollTop = document.documentElement.scrollTop;
+  // console.log(scrollTop)
   if (scrollTop > lastScrollTop) {//scroll down
     headerMenu.style.position = 'relative';
     headerMenu.style.transform = 'translateY(-100%)';
     headerMenu.parentElement.style.marginBottom = 0 + 'px';
   } else {//scroll up
     headerMenu.style.position = 'fixed';
-    headerMenu.style.transform = 'translateY(0%)';
+    headerMenu.style.transform = 'none';
     headerMenu.parentElement.style.marginBottom = 69 + 'px';
-    console.log('scroll up')
+    // console.log('scroll up')
   }
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }

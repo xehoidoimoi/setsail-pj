@@ -11,8 +11,10 @@
       }
 
       &__caption {
-            bottom: unset;
             top: 50%;
+            right: 12%;
+            left: 12%;
+            bottom: unset;
             transform: translateY(-50%);
       }
 
