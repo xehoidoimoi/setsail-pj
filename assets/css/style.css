@@ -818,12 +818,9 @@ header {
   color: #a9a9a9;
 }
 
-.footer {
-  padding: 12px 0px;
-  background-color: #212121;
-}
 .footer__list {
-  margin: 24px 36px;
+  padding: 105px 36px 50px;
+  background-color: #212121;
 }
 .footer__desc {
   font-size: 17px;
@@ -868,6 +865,10 @@ header {
   border: 1px solid transparent;
   background-color: #fff;
 }
+.footer__bottom-holder {
+  background-color: #212121;
+}
+
 .nav-top {
   z-index: 99;
   --height: 60px;
@@ -938,6 +939,10 @@ header {
   }
   .winter-resort__item {
     padding: 0 24px;
+  }
+
+  .footer__list {
+    padding: 105px 80px 50px;
   }
 }
 

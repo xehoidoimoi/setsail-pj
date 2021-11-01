@@ -3,11 +3,10 @@
 }
 
 .footer {
-      padding: 12px 0px;
-      background-color: #212121;
 
       &__list {
-            margin: 24px 36px;
+            padding: 105px 36px 50px;
+            background-color: #212121;
       }
 
       &__desc {
@@ -69,9 +68,7 @@
       }
 
       &__bottom-holder {
-            p {}
-
-            a {}
+            background-color: #212121;
       }
 }
 
