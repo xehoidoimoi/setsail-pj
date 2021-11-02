@@ -268,7 +268,7 @@ header {
   left: 0;
   right: 0;
   z-index: 99;
-  padding: 0 60px;
+  padding: 0 52px;
   max-height: 0;
   display: none;
   transition: all 0.7s linear;
@@ -295,7 +295,7 @@ header {
   height: auto;
   text-align: right;
   pointer-events: none;
-  padding: 12px 12px 10px 0;
+  padding: 12px 18px 10px 0;
 }
 .header__bars .mobile-arrow i {
   display: inline-block;
@@ -352,6 +352,7 @@ header {
 .modal__user {
   border: 0 !important;
   margin: 0 16px !important;
+  background-color: #3fd0d4;
 }
 
 .modal__list-item {
@@ -383,6 +384,17 @@ header {
   padding: 30px 25px;
   padding-bottom: 20px;
   background-color: #3fd0d4;
+}
+.modal__login-header {
+  padding-bottom: 24px;
+}
+.modal__login-heading {
+  padding-bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.modal__login-title {
+  line-height: 20px;
 }
 .modal__login-input {
   padding: 13px 16px;
@@ -889,6 +901,17 @@ header {
 }
 
 @media (min-width: 768px) {
+  .header__bars-list {
+    padding: 0 111px;
+  }
+
+  .modal__user {
+    margin: 0 70px !important;
+  }
+  .modal__login {
+    padding: 30px 35px;
+  }
+
   .banner-slider__img {
     height: 630px;
   }
@@ -943,6 +966,11 @@ header {
 
   .footer__list {
     padding: 105px 80px 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .header__bars-list {
+    padding: 0 153px;
   }
 }
 

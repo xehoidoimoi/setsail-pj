@@ -80,7 +80,6 @@ modalListBtn.forEach((item) => {
 // todo Slider Tour
 const swiperTour = new Swiper("#slider-tour", {
   speed: 600,
-  // spaceBetween: 15,
   slidesPerView: "auto",
   pagination: {
     el: ".swiper-pagination",
@@ -91,14 +90,24 @@ const swiperTour = new Swiper("#slider-tour", {
     delay: 5000,
   },
   loop: true,
-  // Responsive breakpoints
+  //* Responsive breakpoints
   breakpoints: {
-    // when window width is >= 768px
+    //? when window width is >= 768px
     768: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
       spaceBetween: 20,
-    }
+    },
+    //? when window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 25,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+    },
   }
 });
 
@@ -112,9 +121,9 @@ const swiperTopReview = new Swiper("#top-review", {
   },
   loop: true,
 
-  // Responsive breakpoints
+  //*  Responsive breakpoints
   breakpoints: {
-    // when window width is >= 768px
+    //?  when window width is >= 768px
     768: {
       slidesPerView: 2,
       spaceBetween: 25,
@@ -124,7 +133,7 @@ const swiperTopReview = new Swiper("#top-review", {
         type: "bullets",
         clickable: true,
       },
-    }
+    },
   }
 });
 

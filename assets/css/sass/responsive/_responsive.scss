@@ -1,6 +1,24 @@
 // todo Tablet
 @media (min-width:768px) {
 
+      // ! Header Bars Menu
+      .header {
+            &__bars-list {
+                  padding: 0 111px;
+            }
+      }
+
+      // ! Modal User
+      .modal {
+            &__user {
+                  margin: 0 70px !important;
+            }
+
+            &__login {
+                  padding: 30px 35px;
+            }
+      }
+
       // ! Carousel Banner
       .banner-slider {
 
@@ -76,6 +94,17 @@
       .footer {
             &__list {
                   padding: 105px 80px 50px;
+            }
+      }
+}
+
+// todo Tablet Pro
+@media (min-width: 1024px) {
+
+      // ! Header Bars Menu
+      .header {
+            &__bars-list {
+                  padding: 0 153px;
             }
       }
 }
