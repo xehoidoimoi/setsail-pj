@@ -1,6 +1,7 @@
 .top-review {
       height: auto;
-      padding: 25% 0;
+      padding-top: 25%;
+      padding-bottom: 4%;
       background-size: cover;
       background-attachment: scroll;
       min-height: 200px !important;
@@ -21,18 +22,22 @@
             margin-bottom: 12px;
       }
 
+      &__slider {
+            height: 500px;
+
+            .swiper-wrapper {
+                  height: 70%;
+            }
+      }
+
       &__item {
             margin: 25px 0;
             border-radius: 8px;
       }
 
-      &__slider {
-            overflow: unset !important;
-      }
-
       &__pagination {
             margin-top: 48px;
-            bottom: -40px !important;
+            bottom: 65px !important;
 
             .swiper-pagination-bullet {
                   width: 12px;

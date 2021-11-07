@@ -632,7 +632,8 @@ header {
 
 .top-review {
   height: auto;
-  padding: 25% 0;
+  padding-top: 25%;
+  padding-bottom: 4%;
   background-size: cover;
   background-attachment: scroll;
   min-height: 200px !important;
@@ -653,16 +654,19 @@ header {
   overflow: hidden;
   margin-bottom: 12px;
 }
+.top-review__slider {
+  height: 500px;
+}
+.top-review__slider .swiper-wrapper {
+  height: 70%;
+}
 .top-review__item {
   margin: 25px 0;
   border-radius: 8px;
 }
-.top-review__slider {
-  overflow: unset !important;
-}
 .top-review__pagination {
   margin-top: 48px;
-  bottom: -40px !important;
+  bottom: 65px !important;
 }
 .top-review__pagination .swiper-pagination-bullet {
   width: 12px;
@@ -901,6 +905,10 @@ header {
 }
 
 @media (min-width: 768px) {
+  .winter-title {
+    font-size: 58px;
+  }
+
   .header__bars-list {
     padding: 0 111px;
   }
@@ -934,9 +942,6 @@ header {
     margin: 0 auto;
   }
 
-  .winter-sport__title {
-    font-size: 58px;
-  }
   .winter-sport__modal-dialog {
     max-width: 700px;
   }
@@ -954,9 +959,20 @@ header {
     position: absolute;
   }
 
-  .winter-resort__title {
-    font-size: 58px;
+  .top-review {
+    padding: 17% 0% 4% 0;
   }
+  .top-review__heading {
+    padding-bottom: 36px;
+  }
+  .top-review__desc {
+    padding: 0px 24px;
+  }
+
+  .winter-holiday__desc {
+    padding: 0px 24px;
+  }
+
   .winter-resort__desc {
     padding: 0 12px;
   }
@@ -969,8 +985,24 @@ header {
   }
 }
 @media (min-width: 1024px) {
+  .winter-padding {
+    padding: 5rem 12rem;
+  }
+
   .header__bars-list {
     padding: 0 153px;
+  }
+
+  .winter-title {
+    font-size: 65px;
+  }
+
+  .winter-sport__modal-dialog {
+    max-width: 960px;
+  }
+
+  .top-review__desc {
+    padding: 0px 62px;
   }
 }
 

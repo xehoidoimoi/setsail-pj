@@ -1,5 +1,11 @@
+// todo Tablet & Tablet Pro
+@media (min-width: 768px) {}
+
 // todo Tablet
 @media (min-width:768px) {
+      .winter-title {
+            font-size: 58px;
+      }
 
       // ! Header Bars Menu
       .header {
@@ -51,9 +57,6 @@
 
       // ! Winter Sport
       .winter-sport {
-            &__title {
-                  font-size: 58px;
-            }
 
             &__modal-dialog {
                   max-width: 700px;
@@ -75,12 +78,29 @@
             }
       }
 
-      // ! Winter Resort
-      .winter-resort {
-            &__title {
-                  font-size: 58px;
+      // ! Top Review
+      .top-review {
+            padding: 17% 0% 4% 0;
+
+            &__heading {
+                  padding-bottom: 36px;
             }
 
+            &__desc {
+                  padding: 0px 24px;
+            }
+      }
+
+      // ! Winter Holiday
+      .winter-holiday {
+
+            &__desc {
+                  padding: 0px 24px;
+            }
+      }
+
+      // ! Winter Resort
+      .winter-resort {
             &__desc {
                   padding: 0 12px;
             }
@@ -100,11 +120,32 @@
 
 // todo Tablet Pro
 @media (min-width: 1024px) {
+      .winter-padding {
+            padding: 5rem 12rem;
+      }
 
       // ! Header Bars Menu
       .header {
             &__bars-list {
                   padding: 0 153px;
+            }
+      }
+
+      // ! Winter Resort
+      .winter-title {
+            font-size: 65px;
+      }
+
+      .winter-sport {
+            &__modal-dialog {
+                  max-width: 960px;
+            }
+      }
+
+      // ! Top Review
+      .top-review {
+            &__desc {
+                  padding: 0px 62px;
             }
       }
 }
