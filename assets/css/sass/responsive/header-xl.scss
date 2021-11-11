@@ -1,0 +1,63 @@
+header {
+      background-color: #fff;
+      margin-bottom: 0 !important;
+}
+
+.header {
+      padding: 0px 10px;
+      background-color: #fff;
+      justify-content: space-between;
+
+      &__logo {
+            a {
+                  img {
+                        height: 48px;
+                  }
+            }
+      }
+
+      &__menu {
+            padding: 0px 36px;
+            position: relative;
+            z-index: 999;
+
+            &-item {
+                  padding-right: 68px;
+                  cursor: pointer;
+
+                  &:hover {
+                        .sub-header__list {
+                              display: block;
+                        }
+                  }
+            }
+
+            &-heading {
+                  font-size: 15px;
+                  font-weight: 600;
+                  line-height: 80px;
+                  @include heading;
+            }
+      }
+
+      // todo Sub Header
+      .sub-header {
+            &__list {
+                  top: 80px;
+                  left: auto;
+                  margin-left: -36px;
+                  display: none;
+                  overflow: unset;
+                  min-width: 260px;
+                  max-height: unset;
+                  position: absolute;
+                  background-color: #fff;
+                  padding: 24px 0px 24px 36px;
+            }
+
+            &__link {
+                  padding: 5px 0;
+                  border: 0;
+            }
+      }
+}

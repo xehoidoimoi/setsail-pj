@@ -149,3 +149,8 @@
             }
       }
 }
+
+// todo PC medium
+@media (min-width: 1200px) {
+      @import "./header-xl.scss";
+}

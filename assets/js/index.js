@@ -164,8 +164,11 @@ const ourTeam = new Swiper("#our-team__slider", {
             // when window width is >= 768px
             768: {
                   slidesPerView: 2,
-            }
-      }
+            },
+            1024: {
+                  slidesPerView: 3,
+            },
+      },
 });
 
 // todo Count up

@@ -1005,5 +1005,54 @@ header {
     padding: 0px 62px;
   }
 }
+@media (min-width: 1200px) {
+  header {
+    background-color: #fff;
+    margin-bottom: 0 !important;
+  }
+
+  .header {
+    padding: 0px 10px;
+    background-color: #fff;
+    justify-content: space-between;
+  }
+  .header__logo a img {
+    height: 48px;
+  }
+  .header__menu {
+    padding: 0px 36px;
+    position: relative;
+    z-index: 999;
+  }
+  .header__menu-item {
+    padding-right: 68px;
+    cursor: pointer;
+  }
+  .header__menu-item:hover .sub-header__list {
+    display: block;
+  }
+  .header__menu-heading {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 80px;
+    color: #212121;
+  }
+  .header .sub-header__list {
+    top: 80px;
+    left: auto;
+    margin-left: -36px;
+    display: none;
+    overflow: unset;
+    min-width: 260px;
+    max-height: unset;
+    position: absolute;
+    background-color: #fff;
+    padding: 24px 0px 24px 36px;
+  }
+  .header .sub-header__link {
+    padding: 5px 0;
+    border: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -29,7 +29,8 @@
       <div class="main">
             <!-- !Header -->
             <header id="header" class="container-fluid position-relative">
-                  <section class="header container align-items-center">
+                  <!-- todo Header < 1200px -->
+                  <section class="header container align-items-center d-xl-none">
                         <div class="header__bars ">
                               <div class="header__bars-menu">
                                     <span class="header__bars-btn"><i class=" fas fa-bars text-white"></i></span>
@@ -653,10 +654,412 @@
                               </div>
                         </div>
                   </section>
+                  <!-- todo Header >= 1200px -->
+                  <section class="header container-xl align-items-center d-none d-xl-flex">
+                        <div class="header__logo">
+                              <a href="#" style="height: 36px;">
+                                    <img src="./assets/img/logo.png" alt="logo">
+                              </a>
+                        </div>
+                        <div class="header__menu ">
+                              <ul class="header__menu-list d-xl-flex">
+                                    <li class="header__menu-item">
+                                          <h3 class="header__menu-heading active-color">
+                                                Home</h3>
+                                          <!-- ?----Sub Header----- -->
+                                          <ul class="sub-header__list">
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Travel Agency</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link active-color">Winter
+                                                            Holydays</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Exotic Destinations</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Summer Holidays</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">City Tours</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">New Year Trips</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Destinations
+                                                            Carousel</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Wine Tours</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Vacation Showcase</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Landing</a>
+                                                </li>
+                                          </ul>
+                                    </li>
+                                    <li class="header__menu-item">
+                                          <h3 class="header__menu-heading">Pages</h3>
+                                          <!-- ?----Sub Header----- -->
+                                          <ul class="sub-header__list">
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">About Us</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">What We Offer</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Our Team</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Get In Touch</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Contact Us</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">FAQ Page</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Coming Soon</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Error Page</a>
+                                                </li>
+                                          </ul>
+                                    </li>
+                                    <li class="header__menu-item">
+                                          <h3 class="header__menu-heading">Destinations</h3>
+                                          <!-- ?----Sub Header----- -->
+                                          <ul class="sub-header__list">
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Destination List</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Destination Slider</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Destination Item</a>
+                                                </li>
+                                          </ul>
+                                    </li>
+                                    <li class="header__menu-item">
+                                          <h3 class="header__menu-heading">Tours</h3>
+                                          <!-- ?----Sub Header----- -->
+                                          <ul class="sub-header__list">
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Standard List</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Gallery List</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Split List</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Tour Item</a>
+                                                </li>
+                                          </ul>
+                                    </li>
+                                    <li class="header__menu-item">
+                                          <h3 class="header__menu-heading">Blog</h3>
+                                          <!-- ?----Sub Header----- -->
+                                          <ul class="sub-header__list">
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Blog Masonry</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <h3 class="header__bars-heading font-weight">
+                                                            Blog
+                                                            Standard
+                                                      </h3>
+                                                      <span class="mobile-arrow">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                      </span>
+                                                      <!-- ?----Sub Header----- -->
+                                                      <ul class="sub-header__list">
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Right
+                                                                        Sidebar</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Left
+                                                                        Sidebar</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Without
+                                                                        Sidebar</a>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <h3 class="header__bars-heading font-weight">Post Types
+                                                      </h3>
+                                                      <span class="mobile-arrow">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                      </span>
+                                                      <!-- ?----Sub Header----- -->
+                                                      <ul class="sub-header__list">
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Standard</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Gallery</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Link</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Quote</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Video</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Audio</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">No
+                                                                        Sidebar</a>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                          </ul>
+                                    </li>
+                                    <li class="header__menu-item">
+                                          <h3 class="header__menu-heading">Shop</h3>
+                                          <!-- ?----Sub Header----- -->
+                                          <ul class="sub-header__list">
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Product List</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <a href="#" class="sub-header__link">Product Single</a>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <h3 class="header__bars-heading font-weight">Shop Layouts
+                                                      </h3>
+                                                      <span class="mobile-arrow">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                      </span>
+                                                      <!-- ?----Sub Header----- -->
+                                                      <ul class="sub-header__list">
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Three
+                                                                        Columns</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Four
+                                                                        Columns</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Full
+                                                                        Width</a>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <h3 class="header__bars-heading font-weight">Shop Pages
+                                                      </h3>
+                                                      <span class="mobile-arrow">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                      </span>
+                                                      <!-- ?----Sub Header----- -->
+                                                      <ul class="sub-header__list">
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">My
+                                                                        account</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Cart</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Checkout</a>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                          </ul>
+                                    </li>
+                                    <li class="header__menu-item">
+                                          <h3 class="header__menu-heading">Elements</h3>
+                                          <!-- ?----Sub Header----- -->
+                                          <ul class="sub-header__list">
+                                                <li class="sub-header__item">
+                                                      <h3 class="header__bars-heading font-weight">Featured
+                                                      </h3>
+                                                      <span class="mobile-arrow">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                      </span>
+                                                      <!-- ?----Sub Header----- -->
+                                                      <ul class="sub-header__list">
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Tour
+                                                                        List</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Tour
+                                                                        Carousel</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Tours
+                                                                        Filter</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Destination
+                                                                        With Tours</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Destination
+                                                                        List</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Destination
+                                                                        Fullscreen Slider</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Fullscreen
+                                                                        Sections</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Reviews
+                                                                        Carousel</a>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <h3 class="header__bars-heading font-weight">Presentation
+                                                      </h3>
+                                                      <span class="mobile-arrow">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                      </span>
+                                                      <!-- ?----Sub Header----- -->
+                                                      <ul class="sub-header__list">
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Team</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Blog
+                                                                        List</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Shop
+                                                                        List</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Testimonials</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Banner</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Clients</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Parallax
+                                                                        Section</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Video
+                                                                        Button</a>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <h3 class="header__bars-heading font-weight">Classic
+                                                      </h3>
+                                                      <span class="mobile-arrow">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                      </span>
+                                                      <!-- ?----Sub Header----- -->
+                                                      <ul class="sub-header__list">
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Accordions</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Tabs</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Buttons</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Google
+                                                                        Maps</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Contact
+                                                                        Form</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Progress
+                                                                        Bar</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Countdown</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Counters</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Call To
+                                                                        Action</a>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                                <li class="sub-header__item">
+                                                      <h3 class="header__bars-heading font-weight">Typography
+                                                      </h3>
+                                                      <span class="mobile-arrow">
+                                                            <i class="bi bi-chevron-right"></i>
+                                                      </span>
+                                                      <!-- ?----Sub Header----- -->
+                                                      <ul class="sub-header__list">
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Headings</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Columns</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Section
+                                                                        Title</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Blockquote</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Dropcaps</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Highlights</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Icon with
+                                                                        text</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Separators</a>
+                                                            </li>
+                                                            <li class="sub-header__item">
+                                                                  <a href="#" class="sub-header__link">Custom
+                                                                        Font</a>
+                                                            </li>
+                                                      </ul>
+                                                </li>
+                                          </ul>
+                                    </li>
+                              </ul>
+                        </div>
+                        <div class="header__action">
+                        </div>
+                  </section>
             </header>
             <!-- !Carousel Banner-->
             <section id='carousel-banner' class="container-fluid banner-slider carousel slide carousel-fade"
-                  data-bs-ride="">
+                  data-bs-ride="carousel">
                   <!--? The slideshow/carousel -->
                   <div class="carousel-inner banner-list">
                         <div class="carousel-item banner-slider__item active">
@@ -930,7 +1333,7 @@
                                                 <iframe width="auto" height="auto"
                                                       src="https://www.youtube.com/embed/CQlatm6yAzQ?rel=1&autoplay=1"
                                                       title="YouTube video player" frameborder="0"
-                                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                       allowfullscreen></iframe>
                                           </div>
                                     </div>
@@ -1298,25 +1701,25 @@
                   <!-- ?Our Team Count -->
                   <div class="our-team__count">
                         <ul class="our-team__count-list text-center row">
-                              <li class="our-team__count-item col-md-6">
+                              <li class="our-team__count-item col-md-6 col-lg-3">
                                     <span class="counter text-white d-block">
                                           452
                                     </span>
                                     <p class="text-white">Tourists</p>
                               </li>
-                              <li class="our-team__count-item col-md-6">
+                              <li class="our-team__count-item col-md-6 col-lg-3">
                                     <span class="counter text-white d-block">
                                           120
                                     </span>
                                     <p class="text-white">Years</p>
                               </li>
-                              <li class="our-team__count-item col-md-6">
+                              <li class="our-team__count-item col-md-6 col-lg-3">
                                     <span class="counter text-white d-block">
                                           283
                                     </span>
                                     <p class="text-white">Cottages</p>
                               </li>
-                              <li class="our-team__count-item col-md-6">
+                              <li class="our-team__count-item col-md-6 col-lg-3">
                                     <span class="counter text-white d-block">
                                           197
                                     </span>
@@ -1339,7 +1742,7 @@
                         </div>
                         <!-- ?Winter Resort Image -->
                         <ul class="winter-resort__list row">
-                              <li class="winter-resort__item col-md-6 position-relative">
+                              <li class="winter-resort__item col-md-6 col-lg-4 position-relative">
                                     <div href="#" class="winter-resort__image position-relative">
                                           <img class="winter-resort__img rounded-circle"
                                                 src="./assets/img/destinations-featured-img-8-1.jpg" alt="img">
@@ -1348,12 +1751,8 @@
                                                 <h5>Slovenia</h5>
                                           </div>
                                     </div>
-                                    <!-- <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
-                                    <div class="winter-resort__text position-absolute text-white">
-                                          <h5>Slovenia</h5>
-                                    </div> -->
                               </li>
-                              <li class="winter-resort__item col-md-6 position-relative">
+                              <li class="winter-resort__item col-md-6 col-lg-4 position-relative">
                                     <div href="#" class="winter-resort__image position-relative">
                                           <img class="winter-resort__img rounded-circle"
                                                 src="./assets/img/destinations-featured-img-9-1.jpg" alt="img">
@@ -1365,15 +1764,8 @@
                                                 <i class="fas fa-star text-white"></i>
                                           </span>
                                     </div>
-                                    <!-- <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
-                                    <div class="winter-resort__text position-absolute text-white">
-                                          <h5>France</h5>
-                                    </div> -->
-                                    <!-- <span class="winter-resort__start bg-primary position-absolute">
-                                          <i class="fas fa-star text-white"></i>
-                                    </span> -->
                               </li>
-                              <li class="winter-resort__item col-md-6 position-relative">
+                              <li class="winter-resort__item col-md-6 col-lg-4 position-relative">
                                     <div href="#" class="winter-resort__image position-relative">
                                           <img class="winter-resort__img rounded-circle"
                                                 src="./assets/img/destinations-featured-img-10-1.jpg" alt="img">
@@ -1382,10 +1774,6 @@
                                                 <h5>Switzerland</h5>
                                           </div>
                                     </div>
-                                    <!-- <a href="#" class="winter-resort__link position-absolute rounded-circle"></a>
-                                    <div class="winter-resort__text position-absolute text-white">
-                                          <h5>Switzerland</h5>
-                                    </div> -->
                               </li>
                         </ul>
                   </div>
