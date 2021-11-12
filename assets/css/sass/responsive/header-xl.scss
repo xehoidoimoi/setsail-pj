@@ -30,6 +30,19 @@ header {
                               display: block;
                         }
                   }
+
+                  &:last-child {
+                        &:hover {
+                              .sub-header__list-element {
+                                    left: 0;
+                                    right: 0;
+                                    // position: fixed;
+                                    margin-left: 0;
+                                    padding-top: 0;
+                                    display: flex !important;
+                              }
+                        }
+                  }
             }
 
             &-heading {
@@ -37,6 +50,11 @@ header {
                   font-weight: 600;
                   line-height: 80px;
                   @include heading;
+                  transition: all 0.05s ease-in;
+
+                  &:hover {
+                        color: $primary_color;
+                  }
             }
       }
 
@@ -52,12 +70,56 @@ header {
                   max-height: unset;
                   position: absolute;
                   background-color: #fff;
-                  padding: 24px 0px 24px 36px;
+                  padding: 24px 0px;
+            }
+
+            &__item {
+                  display: flex;
+                  align-items: center;
+                  padding: 0 36px;
+                  // animation: scale-2 0.25s linear;
+                  // transition: all 0.25s ease-in-out;
+
+                  &:hover {
+                        .sub-header__item-list {
+                              display: block;
+                              animation: fade 0.25s linear;
+                        }
+                  }
+
+                  &-list-element {
+                        margin-left: -36px;
+
+                        .sub-header__item {
+                              padding-right: 0;
+                        }
+                  }
             }
 
             &__link {
                   padding: 5px 0;
                   border: 0;
+
+                  &:hover {
+                        color: $primary_color;
+                  }
+            }
+
+            &__item-list {
+                  top: -24px;
+                  left: 100%;
+                  display: none;
+                  overflow: unset;
+                  min-width: 260px;
+                  max-height: unset;
+                  position: absolute;
+                  background-color: #fff;
+                  padding: 24px 0px;
+            }
+
+            &__menu-heading {
+                  line-height: 2.4;
+                  margin-right: auto;
             }
       }
 }

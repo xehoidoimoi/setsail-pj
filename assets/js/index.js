@@ -214,3 +214,7 @@ window.onscroll = () => {
       }
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }
+
+// ! Set Effect height when hover on menu at res >= 1200px
+const listMenu = document.querySelectorAll('.sub-header__list');
+console.log(listMenu);
