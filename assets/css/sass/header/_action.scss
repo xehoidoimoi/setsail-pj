@@ -1,0 +1,107 @@
+.header__action {
+      $height: 80px;
+      height: $height;
+
+      &-item {
+            margin: 0 12px;
+            color: $secondary_color;
+            height: $height;
+            line-height: $height;
+
+            span {
+                  cursor: pointer;
+            }
+
+            &>span:hover {
+                  color: $primary_color;
+                  transition: all 0.1s linear;
+            }
+
+            span {
+                  svg {
+                        width: 25px;
+                        height: 21px;
+                  }
+            }
+      }
+
+      // todo Cart
+      &-cart {
+            .cart__product-list {
+                  right: 0;
+                  top: 100%;
+                  z-index: 999;
+                  padding: 24px;
+                  line-height: initial;
+                  min-width: 280px;
+                  max-height: 0;
+                  overflow: hidden;
+                  visibility: hidden;
+                  opacity: 0;
+                  background-color: #fff;
+
+                  p {
+                        padding-left: 12px;
+                  }
+            }
+      }
+
+      // todo Search
+      .search-modal {
+            &.active {
+                  display: block !important;
+                  animation: fade 0.25s linear;
+                  will-change: fade 0.25s linear;
+                  transition: all 0.25s linear;
+            }
+
+            &__overlay {
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  z-index: 999;
+                  @include background-opacity($primary_color, 0.7);
+            }
+
+            &__close {
+                  top: 0;
+                  right: 28px;
+                  color: #fff;
+                  z-index: 9999;
+
+                  svg {
+                        width: 30px;
+                        height: auto;
+                  }
+            }
+
+            &__form {
+                  top: 50%;
+                  left: 50%;
+                  display: flex;
+                  width: 75%;
+                  z-index: 9999;
+                  line-height: initial;
+                  max-width: 950px;
+                  transform: translate(-50%, -50%);
+            }
+
+            &__input {
+                  flex: 1;
+                  padding: 30px;
+                  background-color: #fff;
+            }
+
+            &__btn {
+                  flex: 0.3;
+                  font-weight: 600;
+                  background-color: $primary_color;
+
+                  &:hover {
+                        transition: all 0.2s linear;
+                        background-color: #23a9af;
+                  }
+            }
+      }
+}

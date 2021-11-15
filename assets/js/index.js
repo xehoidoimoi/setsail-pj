@@ -216,5 +216,76 @@ window.onscroll = () => {
 }
 
 // ! Set Effect height when hover on menu at res >= 1200px
-const listMenu = document.querySelectorAll('.sub-header__list');
+
+const listMenu = document.querySelectorAll('.sub-header__list.pc');
+const itemMenu = document.querySelectorAll('.header__menu-item');
 console.log(listMenu);
+itemMenu.forEach((item, index) => {
+      const listMenuItem = listMenu[index];
+      console.log(listMenuItem.scrollHeight)
+      item.onmouseover = (e) => {
+            listMenuItem.style.maxHeight = listMenuItem.scrollHeight + "px";
+            listMenuItem.style.visibility = "visible";
+            listMenuItem.style.transitionDuration = "0.35s";
+            listMenuItem.style.transitionTiming = "linear";
+            listMenuItem.style.willChange = "normal";
+            listMenuItem.style.opacity = 1;
+            // listMenuItem.style.paddingTop = 24 + "px";
+            // listMenuItem.style.paddingBottom = 24 + "px";
+      }
+      item.onmouseout = (e) => {
+            if (listMenuItem.style.maxHeight) {
+                  listMenuItem.style.maxHeight = null;
+                  listMenuItem.style.visibility = "hidden";
+                  listMenuItem.style.transitionDuration = "0.15s";
+                  listMenuItem.style.transitionTiming = "linear";
+                  listMenuItem.style.opacity = 0;
+                  // listMenuItem.style.paddingTop = 0 + "px";
+                  // listMenuItem.style.paddingBottom = 0 + "px";
+            }
+      }
+})
+
+const subHeaderListPc = document.querySelectorAll('.sub-header__item');
+subHeaderListPc.forEach((item) => {
+      item.onmouseover = () => {
+            item.parentElement.style.overflow = "unset";
+      }
+})
+
+const openSlideDown = document.querySelectorAll('.open-slide-down');
+const btnSlideDown = document.querySelectorAll('.btn-slide-down');
+
+btnSlideDown.forEach((item, index) => {
+      const openSlideDownItem = openSlideDown[index];
+      item.onmouseover = (e) => {
+            openSlideDownItem.style.maxHeight = openSlideDownItem.scrollHeight + "px";
+            openSlideDownItem.style.visibility = "visible";
+            openSlideDownItem.style.transitionDuration = "0.35s";
+            openSlideDownItem.style.transitionTiming = "linear";
+            openSlideDownItem.style.willChange = "normal";
+            openSlideDownItem.style.opacity = 1;
+      }
+      item.onmouseout = (e) => {
+            if (openSlideDownItem.style.maxHeight) {
+                  openSlideDownItem.style.maxHeight = null;
+                  openSlideDownItem.style.visibility = "hidden";
+                  openSlideDownItem.style.transitionDuration = "0.15s";
+                  openSlideDownItem.style.transitionTiming = "linear";
+                  openSlideDownItem.style.opacity = 0;
+            }
+      }
+})
+
+// todo Search Modal
+const searchBtn = document.querySelector('.header__action-search-icon');
+const searchModal = document.querySelector('.search-modal');
+searchBtn.onclick = () => {
+      searchModal.classList.add('active');
+}
+const closeModal = document.querySelectorAll('.close-modal');
+closeModal.forEach(item => {
+      item.onclick = () => {
+            searchModal.classList.remove('active');
+      }
+})

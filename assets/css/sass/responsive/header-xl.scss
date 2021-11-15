@@ -17,17 +17,19 @@ header {
       }
 
       &__menu {
-            padding: 0px 36px;
+            padding: 0px 24px;
             position: relative;
             z-index: 999;
 
             &-item {
-                  padding-right: 68px;
+                  padding-right: 44px;
+                  padding-left: 24px;
                   cursor: pointer;
 
-                  &:hover {
-                        .sub-header__list {
-                              display: block;
+                  &:nth-child(5),
+                  &:nth-child(6) {
+                        .sub-header__item-list {
+                              left: -100%;
                         }
                   }
 
@@ -43,6 +45,14 @@ header {
                               }
                         }
                   }
+
+                  &:hover>.header__menu-heading {
+                        color: $primary_color;
+                  }
+
+                  &:hover>.header__menu-heading::after {
+                        transform: scaleX(1);
+                  }
             }
 
             &-heading {
@@ -50,7 +60,12 @@ header {
                   font-weight: 600;
                   line-height: 80px;
                   @include heading;
+                  position: relative;
                   transition: all 0.05s ease-in;
+
+                  &:after {
+                        @include underline;
+                  }
 
                   &:hover {
                         color: $primary_color;
@@ -61,29 +76,27 @@ header {
       // todo Sub Header
       .sub-header {
             &__list {
-                  top: 80px;
-                  left: auto;
-                  margin-left: -36px;
-                  display: none;
-                  overflow: unset;
-                  min-width: 260px;
-                  max-height: unset;
+                  visibility: hidden;
                   position: absolute;
-                  background-color: #fff;
+                  min-width: 260px;
+                  margin-left: -36px;
                   padding: 24px 0px;
+                  background-color: #fff;
             }
 
             &__item {
                   display: flex;
                   align-items: center;
                   padding: 0 36px;
-                  // animation: scale-2 0.25s linear;
-                  // transition: all 0.25s ease-in-out;
 
                   &:hover {
                         .sub-header__item-list {
                               display: block;
                               animation: fade 0.25s linear;
+                        }
+
+                        .sub-header__list {
+                              overflow: unset;
                         }
                   }
 
@@ -99,9 +112,18 @@ header {
             &__link {
                   padding: 5px 0;
                   border: 0;
+                  position: relative;
 
                   &:hover {
                         color: $primary_color;
+                  }
+
+                  &:after {
+                        @include underline(6px);
+                  }
+
+                  &:hover:after {
+                        transform: scale(1);
                   }
             }
 
@@ -120,6 +142,14 @@ header {
             &__menu-heading {
                   line-height: 2.4;
                   margin-right: auto;
+
+                  &:after {
+                        @include underline(6px);
+                  }
+
+                  &:hover:after {
+                        transform: scale(1);
+                  }
             }
       }
 }
