@@ -153,4 +153,27 @@
 // todo PC medium
 @media (min-width: 1200px) {
       @import "./header-xl.scss";
+
+      // ? Carousel Banner
+      .banner-slider {
+            &__img {
+                  height: auto;
+            }
+
+            &__title {
+                  font-size: 118px;
+            }
+
+            &__desc {
+                  font-size: 18px;
+                  max-width: unset;
+                  margin: 18px 130px;
+            }
+
+            &__control {
+                  span {
+                        color: $primary_color;
+                  }
+            }
+      }
 }

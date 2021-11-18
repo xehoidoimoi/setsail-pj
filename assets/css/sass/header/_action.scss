@@ -115,11 +115,28 @@
             line-height: initial;
             max-width: 460px;
             background-color: #fff;
+            transition: all 0.25s linear;
+            transform: translateX(100%);
+
+            &.active {
+                  transform: translateX(0%);
+            }
+
+            &__overlay {
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  z-index: 99;
+                  display: none;
+                  position: fixed;
+                  background-color: transparent;
+            }
 
             &__close {
                   position: absolute;
                   top: 20px;
-                  right: 0px;
+                  right: 10px;
 
                   &:hover {
                         color: $primary_color;
@@ -127,8 +144,7 @@
             }
 
             &__logo {
-                  padding-top: 48px;
-                  padding-bottom: 48px;
+                  padding: 36px 0;
 
                   &-item {
                         padding: 12px 0;
@@ -140,7 +156,7 @@
             }
 
             &__map {
-                  margin-bottom: 48px;
+                  margin-bottom: 36px;
 
                   &-link {
                         display: block;
@@ -158,6 +174,7 @@
 
             &__search {
                   text-align: center;
+                  margin-bottom: 36px;
 
                   &-title {
                         color: #212121;
@@ -185,6 +202,41 @@
 
                         &:hover {
                               background-color: #3abdc1;
+                        }
+                  }
+            }
+
+            &__social {
+                  text-align: center;
+                  margin-bottom: 36px;
+
+                  &-title {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-bottom: 24px;
+                        color: $secondary_color;
+                  }
+
+                  &-icon-wrapper {
+                        display: flex;
+                        justify-content: center;
+                  }
+
+                  &-icon {
+                        margin: 0px 6px;
+                        border-radius: 50%;
+                        transition: all 0.25s linear;
+                        background-color: $primary_color;
+
+                        &:hover {
+                              background-color: #3abdc1;
+                        }
+
+                        &-item {
+                              color: #fff;
+                              display: block;
+                              font-size: 18px;
+                              padding: 10px 16px;
                         }
                   }
             }

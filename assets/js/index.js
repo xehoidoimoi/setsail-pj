@@ -283,9 +283,25 @@ const searchModal = document.querySelector('.search-modal');
 searchBtn.onclick = () => {
       searchModal.classList.add('active');
 }
+// todo Slide Menu
+const slideMenuBtn = document.querySelector('.header__action-menu-button-slide');
+const slideMenu = document.querySelector('.slide-menu');
+const slideMenuOverlay = document.querySelector('.slide-menu__overlay');
+slideMenuBtn.onclick = () => {
+      slideMenu.classList.add('active');
+      slideMenuOverlay.style.display = 'block';
+}
+
 const closeModal = document.querySelectorAll('.close-modal');
 closeModal.forEach(item => {
-      item.onclick = () => {
-            searchModal.classList.remove('active');
+      item.onclick = (e) => {
+            e.stopPropagation(); //! disable parent click event when child is clicked
+            item.parentElement.classList.remove('active');
+            slideMenuOverlay.style.display = 'none';
       }
 })
+slideMenuOverlay.onclick = (e) => {
+      e.stopPropagation();
+      slideMenu.classList.remove('active');
+      slideMenuOverlay.style.display = 'none';
+}
