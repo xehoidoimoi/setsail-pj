@@ -5,9 +5,16 @@
       }
 
       &__video {
+            cursor: pointer;
             margin-bottom: 4rem;
+            // transition: all 0.95s linear;
 
-            &-img {}
+            &:hover {
+                  .winter-sport__img img {
+                        transform: scale(1.05);
+                        transition: all 0.25s linear;
+                  }
+            }
 
             &-link {
                   pointer-events: none;

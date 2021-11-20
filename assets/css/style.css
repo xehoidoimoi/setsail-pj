@@ -218,10 +218,10 @@ input {
 }
 
 @keyframes scale {
-  from {
+  0% {
     transform: scale(1);
   }
-  to {
+  100% {
     transform: scale(1.1);
   }
 }
@@ -787,14 +787,52 @@ header {
 .slider-tour__item {
   background-color: #fff;
 }
+.slider-tour__item-link {
+  display: block;
+  overflow: hidden;
+}
+.slider-tour__img {
+  transition: all 0.35s linear;
+}
+.slider-tour__img:hover {
+  transform: scale(1.02);
+}
+.slider-tour__skiing a {
+  color: #fff;
+  position: relative;
+}
+.slider-tour__skiing a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: #3fd0d4;
+  transform-origin: bottom left;
+  transition: transform 0.25s linear;
+  background-color: #fff;
+}
+.slider-tour__skiing a:hover::after {
+  transform: scale(1);
+}
 .slider-tour__info {
   margin-bottom: 6rem;
   box-shadow: 5px 8px 13.92px 2.08px rgba(0, 0, 0, 0.05);
+}
+.slider-tour__info a {
+  display: block;
+  width: fit-content;
 }
 .slider-tour__header {
   color: #212121;
   font-weight: 600;
   font-size: 22px;
+  transition: all 0.25s linear;
+}
+.slider-tour__header:hover {
+  color: #3fd0d4;
 }
 .slider-tour__body {
   display: -webkit-box;
@@ -824,7 +862,12 @@ header {
   padding-bottom: 4rem;
 }
 .winter-sport__video {
+  cursor: pointer;
   margin-bottom: 4rem;
+}
+.winter-sport__video:hover .winter-sport__img img {
+  transform: scale(1.05);
+  transition: all 0.25s linear;
 }
 .winter-sport__video-link {
   pointer-events: none;
@@ -1236,7 +1279,6 @@ header {
     height: 48px;
   }
   .header__menu {
-    padding: 0px 24px;
     position: relative;
     z-index: 999;
   }
@@ -1364,6 +1406,23 @@ header {
     transform: scale(1);
   }
 
+  .winter-padding {
+    padding: 5rem;
+  }
+
+  .winter-info {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .winter-title {
+    padding-bottom: 12px;
+  }
+
+  .winter-desc {
+    padding: 0px 24px;
+  }
+
   .banner-slider__img {
     height: auto;
   }
@@ -1375,8 +1434,71 @@ header {
     max-width: unset;
     margin: 18px 130px;
   }
+  .banner-slider__control {
+    opacity: 1;
+  }
+  .banner-slider__control-prev {
+    left: -32px;
+  }
+  .banner-slider__control-next {
+    right: -32px;
+  }
   .banner-slider__control span {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 24px;
     color: #3fd0d4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.25s linear;
+    background-color: #fff;
+  }
+  .banner-slider__control span:hover {
+    color: #fff;
+    background-color: #3fd0d4;
+  }
+
+  .winter-sport__wrapper {
+    padding: 0px 18rem;
+  }
+  .winter-sport__modal {
+    padding: 36px 0;
+  }
+  .winter-sport__video {
+    margin-bottom: 0;
+  }
+
+  .top-review {
+    padding-top: 108px;
+    padding-bottom: 107px;
+    background-attachment: fixed;
+  }
+  .top-review__slider {
+    height: auto;
+    padding-bottom: 36px;
+  }
+  .top-review__user {
+    margin: 0;
+    display: flex;
+    padding: 36px 24px;
+  }
+  .top-review__user-avatar {
+    min-width: 35%;
+  }
+  .top-review__user-info {
+    margin-left: 16px;
+    text-align: left;
+  }
+  .top-review__user-city {
+    letter-spacing: -1px;
+  }
+  .top-review__pagination {
+    bottom: 2px !important;
+  }
+
+  .footer__list {
+    padding: 105px 45px 50px;
   }
 }
 

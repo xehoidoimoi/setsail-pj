@@ -3,15 +3,55 @@
 
       &__item {
             background-color: #fff;
+
+            &-link {
+                  display: block;
+                  overflow: hidden;
+            }
+      }
+
+      &__img {
+            transition: all 0.35s linear;
+
+            &:hover {
+                  transform: scale(1.02);
+
+            }
+      }
+
+      &__skiing {
+            a {
+                  color: #fff;
+                  position: relative;
+
+                  &:after {
+                        @include underline(0px);
+                        background-color: #fff;
+                  }
+
+                  &:hover::after {
+                        transform: scale(1);
+                  }
+            }
       }
 
       &__info {
             margin-bottom: 6rem;
             box-shadow: 5px 8px 13.92px 2.08px rgb(0 0 0 / 5%);
+
+            a {
+                  display: block;
+                  width: fit-content;
+            }
       }
 
       &__header {
             @include title(22px);
+            transition: all 0.25s linear;
+
+            &:hover {
+                  color: $primary_color;
+            }
       }
 
       &__body {

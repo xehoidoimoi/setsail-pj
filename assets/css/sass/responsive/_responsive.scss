@@ -154,6 +154,23 @@
 @media (min-width: 1200px) {
       @import "./header-xl.scss";
 
+      .winter-padding {
+            padding: 5rem;
+      }
+
+      .winter-info {
+            width: 50%;
+            margin: 0 auto;
+      }
+
+      .winter-title {
+            padding-bottom: 12px;
+      }
+
+      .winter-desc {
+            padding: 0px 24px;
+      }
+
       // ? Carousel Banner
       .banner-slider {
             &__img {
@@ -171,9 +188,88 @@
             }
 
             &__control {
+                  opacity: 1;
+
+                  &-prev {
+                        left: -32px;
+                  }
+
+                  &-next {
+                        right: -32px;
+                  }
+
                   span {
-                        color: $primary_color;
+                        $height: 56px;
+                        width: $height;
+                        height: $height;
+                        line-height: $height;
+                        font-size: 24px;
+                        color: #3fd0d4;
+                        border-radius: 50%;
+                        display: inline-block;
+                        transition: all 0.25s linear;
+                        background-color: #fff;
+
+                        &:hover {
+                              color: #fff;
+                              background-color: $primary_color;
+                        }
                   }
             }
+      }
+
+      // ? Winter Sport
+      .winter-sport {
+            &__wrapper {
+                  padding: 0px 18rem;
+            }
+
+            &__modal {
+                  padding: 36px 0;
+            }
+
+            &__video {
+                  margin-bottom: 0;
+            }
+      }
+
+      // ? Top Review
+      .top-review {
+            padding-top: 108px;
+            padding-bottom: 107px;
+            background-attachment: fixed;
+
+            &__slider {
+                  height: auto;
+                  padding-bottom: 36px;
+            }
+
+            &__user {
+                  margin: 0;
+                  display: flex;
+                  padding: 36px 24px;
+
+                  &-avatar {
+                        min-width: 35%;
+                  }
+
+                  &-info {
+                        margin-left: 16px;
+                        text-align: left;
+                  }
+
+                  &-city {
+                        letter-spacing: -1px;
+                  }
+            }
+
+            &__pagination {
+                  bottom: 2px !important;
+            }
+      }
+
+      // ? Footer
+      .footer__list {
+            padding: 105px 45px 50px;
       }
 }

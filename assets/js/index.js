@@ -106,6 +106,14 @@ const swiperTour = new Swiper("#slider-tour", {
                         dynamicBullets: true,
                   },
             },
+            1200: {
+                  slidesPerView: 4,
+                  slidesPerGroup: 4,
+                  spaceBetween: 20,
+                  pagination: {
+                        dynamicBullets: true,
+                  },
+            },
       }
 });
 
@@ -114,9 +122,9 @@ const swiperTopReview = new Swiper("#top-review", {
       speed: 1200,
       spaceBetween: 15,
       slidesPerView: 1,
-      autoplay: {
-            delay: 5000,
-      },
+      // autoplay: {
+      //       delay: 5000,
+      // },
       loop: true,
 
       //*  Responsive breakpoints
