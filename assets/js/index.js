@@ -200,7 +200,8 @@ navTop.addEventListener('click', () => {
       document.documentElement.scrollTop = 0;
 })
 // ? On mobile devices
-navTop.ontouchstart = function () {
+navTop.ontouchstart = function (e) {
+      e.stopPropagation();
       alert('Mobile device');
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
