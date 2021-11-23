@@ -120,9 +120,6 @@
 
 // todo Tablet Pro
 @media (min-width: 1024px) {
-      .winter-padding {
-            padding: 5rem 12rem;
-      }
 
       // ! Header Bars Menu
       .header {
@@ -189,13 +186,15 @@
 
             &__control {
                   opacity: 1;
+                  margin: auto;
+                  height: fit-content;
 
                   &-prev {
-                        left: -32px;
+                        left: -52px;
                   }
 
                   &-next {
-                        right: -32px;
+                        right: -52px;
                   }
 
                   span {
@@ -215,6 +214,14 @@
                               background-color: $primary_color;
                         }
                   }
+            }
+      }
+
+      // ? Slider tour
+      .slider-tour {
+            &__desc {
+                  padding-top: 8px !important;
+                  padding-bottom: 8px !important;
             }
       }
 
@@ -271,5 +278,25 @@
       // ? Footer
       .footer__list {
             padding: 105px 45px 50px;
+      }
+}
+
+// todo PC Fullscreen
+@media (min-width: 1400px) {
+      .winter-holiday__item {
+            padding: 18px 22px;
+      }
+
+      .winter-resort__text h5 {
+            font-size: 48px;
+            font-weight: 400;
+      }
+
+      .winter-sport__wrapper {
+            padding: 0px 35rem;
+      }
+
+      .footer__list {
+            padding: 105px 70px 50px;
       }
 }

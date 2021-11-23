@@ -66,7 +66,7 @@ subHeaderLinks.forEach((item) => {
 
 // todo Nav tabs Modal
 const modalListBtn = document.querySelectorAll(".modal__list-btn");
-console.log(modalListBtn);
+// console.log(modalListBtn);
 modalListBtn.forEach((item) => {
       item.onclick = () => {
             const modalListBtnHasActive = document.querySelector(
@@ -108,12 +108,14 @@ const swiperTour = new Swiper("#slider-tour", {
             },
             1200: {
                   slidesPerView: 4,
-                  slidesPerGroup: 4,
+                  slidesPerGroup: 3,
                   spaceBetween: 20,
-                  pagination: {
-                        dynamicBullets: true,
-                  },
             },
+            1400: {
+                  slidesPerView: 5,
+                  slidesPerGroup: 3,
+                  spaceBetween: 20,
+            }
       }
 });
 
@@ -176,6 +178,9 @@ const ourTeam = new Swiper("#our-team__slider", {
             1024: {
                   slidesPerView: 3,
             },
+            1200: {
+                  slidesPerView: 4,
+            },
       },
 });
 
@@ -188,28 +193,40 @@ $(".counter").countUp({
 // todo Nav top
 const navTop = document.querySelector('.nav-top');
 const navHeader = document.querySelector('#header');
-console.log(navHeader)
+// console.log(navHeader)
 // * Scroll to top when clicked
 navTop.onclick = () => {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
 }
-// * Auto hide/show when scroll
+// ? On mobile devices
+navTop.ontouchstart = () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+}
+
+// todo Auto show Nav header when scroll
+let lastScrollTop = 0;
+const headerMenu = document.querySelector('.header');
+const headerMenuPC = document.querySelector('.header.pc');
+const headerPcScroll = document.querySelector('.header-scroll')
 window.onscroll = () => {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      // * Auto hide/show when scroll
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             navTop.style.display = 'block';
             // navHeader.style.top = '0';
       } else {
             navTop.style.display = 'none';
             // navHeader.style.top = '-50px';
       }
-}
-// todo Auto show Nav header when scroll
-let lastScrollTop = 0;
-const headerMenu = document.querySelector('.header');
-window.onscroll = () => {
+      // * Auto show Header when scroll (PC)
+      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            headerPcScroll.style.transform = 'translateY(0%)';
+      } else {
+            headerPcScroll.style.transform = 'translateY(-100%)';
+      }
+      // * Auto show Header when scroll (Mobile)
       let scrollTop = document.documentElement.scrollTop;
-      // console.log(scrollTop)
       if (scrollTop > lastScrollTop) {//scroll down
             headerMenu.style.position = 'relative';
             headerMenu.style.transform = 'translateY(-100%)';
@@ -227,10 +244,10 @@ window.onscroll = () => {
 
 const listMenu = document.querySelectorAll('.sub-header__list.pc');
 const itemMenu = document.querySelectorAll('.header__menu-item');
-console.log(listMenu);
+// console.log(listMenu);
 itemMenu.forEach((item, index) => {
       const listMenuItem = listMenu[index];
-      console.log(listMenuItem.scrollHeight)
+      // console.log(listMenuItem.scrollHeight)
       item.onmouseover = (e) => {
             listMenuItem.style.maxHeight = listMenuItem.scrollHeight + "px";
             listMenuItem.style.visibility = "visible";
@@ -286,26 +303,36 @@ btnSlideDown.forEach((item, index) => {
 })
 
 // todo Search Modal
-const searchBtn = document.querySelector('.header__action-search-icon');
+const searchBtn = document.querySelectorAll('.header__action-search-icon');
 const searchModal = document.querySelector('.search-modal');
-searchBtn.onclick = () => {
-      searchModal.classList.add('active');
-}
-// todo Slide Menu
-const slideMenuBtn = document.querySelector('.header__action-menu-button-slide');
-const slideMenu = document.querySelector('.slide-menu');
-const slideMenuOverlay = document.querySelector('.slide-menu__overlay');
-slideMenuBtn.onclick = () => {
-      slideMenu.classList.add('active');
-      slideMenuOverlay.style.display = 'block';
-}
+searchBtn.forEach((item, index) => {
+      console.log(item)
+      item.onclick = () => {
+            console.log('object')
+            searchModal.classList.add('active');
+      }
+})
 
 const closeModal = document.querySelectorAll('.close-modal');
-closeModal.forEach(item => {
+const slideMenuOverlay = document.querySelector('.slide-menu__overlay');
+console.log(closeModal, slideMenuOverlay)
+closeModal.forEach((item, index) => {
       item.onclick = (e) => {
             e.stopPropagation(); //! disable parent click event when child is clicked
             item.parentElement.classList.remove('active');
-            slideMenuOverlay.style.display = 'none';
+            if (slideMenuOverlay.style.display = 'block') {
+                  slideMenuOverlay.style.display = 'none';
+            }
+      }
+})
+
+// todo Slide Menu
+const slideMenuBtn = document.querySelectorAll('.header__action-menu-button-slide');
+const slideMenu = document.querySelector('.slide-menu');
+slideMenuBtn.forEach((item, index) => {
+      item.onclick = () => {
+            slideMenu.classList.add('active');
+            slideMenuOverlay.style.display = 'block';
       }
 })
 slideMenuOverlay.onclick = (e) => {

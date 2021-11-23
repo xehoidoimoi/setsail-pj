@@ -654,8 +654,107 @@
                               </div>
                         </div>
                   </section>
+                  <!-- ! Pc Search Form-->
+                  <!--? Modal -->
+                  <div class="search-modal d-none">
+                        <div class="search-modal__overlay close-modal position-fixed"></div>
+                        <span class="search-modal__close close-modal position-fixed">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                                    <path fill-rule="evenodd"
+                                          d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                              </svg>
+                        </span>
+                        <div class="search-modal__form position-fixed">
+                              <input class="search-modal__input" type="text" placeholder="Search...">
+                              <button class="search-modal__btn text-uppercase text-white">Find
+                                    Now</button>
+                        </div>
+                  </div>
+                  <!-- ! Pc Menu Slider -->
+                  <!-- ? Overlay -->
+                  <div class="slide-menu__overlay"></div>
+                  <!-- ? Slide menu bars -->
+                  <div class="slide-menu position-fixed">
+                        <div class="slide-menu__close close-modal">
+                              <span class="slide-menu__close-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                          class="bi bi-x-lg" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd"
+                                                d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                                          <path fill-rule="evenodd"
+                                                d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                                    </svg>
+                              </span>
+                        </div>
+                        <div class="slide-menu__logo">
+                              <div class="slide-menu__logo-item">
+                                    <img src="./assets/img/logo-sidearea.png" alt="logo-side-area-1">
+                              </div>
+                              <div class="slide-menu__logo-item">
+                                    <img src="./assets/img/sidearea-img-2.png" alt="logo-side-area-2">
+                              </div>
+                        </div>
+                        <div class="slide-menu__map">
+                              <div class="slide-menu__map-inner">
+                                    <a href="#" class="slide-menu__map-link">
+                                          <img src="./assets/img/sidearea-img.jpg" alt="map"
+                                                class="slide-menu__map-img">
+                                    </a>
+                                    <div class="slide-menu__map-desc">
+                                          <p class="slide-menu__map-text">Lorem ipsum dolor sit
+                                                amet,
+                                                consectetuer adipis cing
+                                                elit. Aenean commodo ligula eget dolor. Aenean
+                                                massa.
+                                                Cum sociis theme natoque</p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="slide-menu__search">
+                              <h5 class="slide-menu__search-title">Find Your Destination</h5>
+                              <div class="slide-menu__search-form">
+                                    <input type="text" class="slide-menu__search-input" placeholder="Search...">
+                                    <button class="slide-menu__search-btn">
+                                          <svg xmlns=" http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                          </svg>
+                                    </button>
+                              </div>
+                        </div>
+                        <div class="slide-menu__social">
+                              <h5 class="slide-menu__social-title">Follow Me</h5>
+                              <div class="slide-menu__social-icon-wrapper">
+                                    <a href="#" class="slide-menu__social-icon">
+                                          <span class="slide-menu__social-icon-item slide-menu__social-icon-twitter">
+                                                <i class="fab fa-twitter"></i>
+                                          </span>
+                                    </a>
+                                    <a href="#" class="slide-menu__social-icon">
+                                          <span class="slide-menu__social-icon-item slide-menu__social-icon-pinterest">
+                                                <i class="fab fa-pinterest-p"></i>
+                                          </span>
+                                    </a>
+                                    <a href="#" class="slide-menu__social-icon">
+                                          <span class="slide-menu__social-icon-item slide-menu__social-icon-facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                          </span>
+                                    </a>
+                                    <a href="#" class="slide-menu__social-icon">
+                                          <span class="slide-menu__social-icon-item slide-menu__social-icon-instagram">
+                                                <i class="fab fa-instagram"></i>
+                                          </span>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
                   <!-- todo Header >= 1200px -->
-                  <section class="header container-xl align-items-center d-none d-xl-flex">
+                  <!-- ? Header default -->
+                  <section class="header pc container-xl align-items-center d-none d-xl-flex">
                         <!-- todo Header Logo -->
                         <div class="header__logo">
                               <a href="#" style="height: 36px;">
@@ -1106,90 +1205,461 @@
                                                       d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
                                           </svg>
                                     </span>
-                                    <!-- ? Overlay -->
-                                    <div class="slide-menu__overlay"></div>
-                                    <!-- ? Slide menu bars -->
-                                    <div class="slide-menu position-fixed">
-                                          <div class="slide-menu__close close-modal">
-                                                <span class="slide-menu__close-icon">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                                            <path fill-rule="evenodd"
-                                                                  d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
-                                                            <path fill-rule="evenodd"
-                                                                  d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
-                                                      </svg>
-                                                </span>
-                                          </div>
-                                          <div class="slide-menu__logo">
-                                                <div class="slide-menu__logo-item">
-                                                      <img src="./assets/img/logo-sidearea.png" alt="logo-side-area-1">
-                                                </div>
-                                                <div class="slide-menu__logo-item">
-                                                      <img src="./assets/img/sidearea-img-2.png" alt="logo-side-area-2">
-                                                </div>
-                                          </div>
-                                          <div class="slide-menu__map">
-                                                <div class="slide-menu__map-inner">
-                                                      <a href="#" class="slide-menu__map-link">
-                                                            <img src="./assets/img/sidearea-img.jpg" alt="map"
-                                                                  class="slide-menu__map-img">
-                                                      </a>
-                                                      <div class="slide-menu__map-desc">
-                                                            <p class="slide-menu__map-text">Lorem ipsum dolor sit amet,
-                                                                  consectetuer adipis cing
-                                                                  elit. Aenean commodo ligula eget dolor. Aenean massa.
-                                                                  Cum sociis theme natoque</p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          <div class="slide-menu__search">
-                                                <h5 class="slide-menu__search-title">Find Your Destination</h5>
-                                                <div class="slide-menu__search-form">
-                                                      <input type="text" class="slide-menu__search-input"
-                                                            placeholder="Search...">
-                                                      <button class="slide-menu__search-btn">
-                                                            <svg xmlns=" http://www.w3.org/2000/svg" width="16"
-                                                                  height="16" fill="currentColor" class="bi bi-search"
-                                                                  viewBox="0 0 16 16">
-                                                                  <path
-                                                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                                            </svg>
-                                                      </button>
-                                                </div>
-                                          </div>
-                                          <div class="slide-menu__social">
-                                                <h5 class="slide-menu__social-title">Follow Me</h5>
-                                                <div class="slide-menu__social-icon-wrapper">
-                                                      <a href="#" class="slide-menu__social-icon">
-                                                            <span
-                                                                  class="slide-menu__social-icon-item slide-menu__social-icon-twitter">
-                                                                  <i class="fab fa-twitter"></i>
-                                                            </span>
-                                                      </a>
-                                                      <a href="#" class="slide-menu__social-icon">
-                                                            <span
-                                                                  class="slide-menu__social-icon-item slide-menu__social-icon-pinterest">
-                                                                  <i class="fab fa-pinterest-p"></i>
-                                                            </span>
-                                                      </a>
-                                                      <a href="#" class="slide-menu__social-icon">
-                                                            <span
-                                                                  class="slide-menu__social-icon-item slide-menu__social-icon-facebook">
-                                                                  <i class="fab fa-facebook-f"></i>
-                                                            </span>
-                                                      </a>
-                                                      <a href="#" class="slide-menu__social-icon">
-                                                            <span
-                                                                  class="slide-menu__social-icon-item slide-menu__social-icon-instagram">
-                                                                  <i class="fab fa-instagram"></i>
-                                                            </span>
-                                                      </a>
-                                                </div>
-                                          </div>
-                                    </div>
                               </div>
                         </div>
+                  </section>
+                  <!-- ? Header when Scroll -->
+                  <section class="header-scroll d-none d-xl-flex">
+                        <section class="header pc container-xl align-items-center d-none d-xl-flex">
+                              <!-- todo Header Logo -->
+                              <div class="header__logo">
+                                    <a href="#" style="height: 36px;">
+                                          <img src="./assets/img/logo.png" alt="logo">
+                                    </a>
+                              </div>
+                              <!-- todo Header Menu -->
+                              <div class="header__menu ">
+                                    <ul class="header__menu-list d-xl-flex">
+                                          <li class="header__menu-item">
+                                                <h3 class="header__menu-heading active-color">
+                                                      Home</h3>
+                                                <!-- ?----Sub Header----- -->
+                                                <ul class="sub-header__list pc">
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Travel Agency</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link active-color">Winter
+                                                                  Holydays</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Exotic Destinations</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Summer Holidays</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">City Tours</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">New Year Trips</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Destinations
+                                                                  Carousel</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Wine Tours</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Vacation Showcase</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Landing</a>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                          <li class="header__menu-item">
+                                                <h3 class="header__menu-heading">Pages</h3>
+                                                <!-- ?----Sub Header----- -->
+                                                <ul class="sub-header__list pc">
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">About Us</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">What We Offer</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Our Team</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Get In Touch</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Contact Us</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">FAQ Page</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Coming Soon</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Error Page</a>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                          <li class="header__menu-item">
+                                                <h3 class="header__menu-heading">Destinations</h3>
+                                                <!-- ?----Sub Header----- -->
+                                                <ul class="sub-header__list pc">
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Destination List</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Destination Slider</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Destination Item</a>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                          <li class="header__menu-item">
+                                                <h3 class="header__menu-heading">Tours</h3>
+                                                <!-- ?----Sub Header----- -->
+                                                <ul class="sub-header__list pc">
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Standard List</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Gallery List</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Split List</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Tour Item</a>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                          <li class="header__menu-item">
+                                                <h3 class="header__menu-heading">Blog</h3>
+                                                <!-- ?----Sub Header----- -->
+                                                <ul class="sub-header__list pc">
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Blog Masonry</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <h3
+                                                                  class="header__menu-heading sub-header__menu-heading font-weight">
+                                                                  Blog
+                                                                  Standard
+                                                            </h3>
+                                                            <span class="mobile-arrow">
+                                                                  <i class="bi bi-chevron-right"></i>
+                                                            </span>
+                                                            <!-- ?----Sub Header----- -->
+                                                            <ul class="sub-header__item-list">
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Right
+                                                                              Sidebar</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Left
+                                                                              Sidebar</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Without
+                                                                              Sidebar</a>
+                                                                  </li>
+                                                            </ul>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <h3
+                                                                  class="header__menu-heading sub-header__menu-heading font-weight">
+                                                                  Post Types
+                                                            </h3>
+                                                            <span class="mobile-arrow">
+                                                                  <i class="bi bi-chevron-right"></i>
+                                                            </span>
+                                                            <!-- ?----Sub Header----- -->
+                                                            <ul class="sub-header__item-list">
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Standard</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Gallery</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Link</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Quote</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Video</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Audio</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">No
+                                                                              Sidebar</a>
+                                                                  </li>
+                                                            </ul>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                          <li class="header__menu-item">
+                                                <h3 class="header__menu-heading">Shop</h3>
+                                                <!-- ?----Sub Header----- -->
+                                                <ul class="sub-header__list pc">
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Product List</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <a href="#" class="sub-header__link">Product Single</a>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <h3
+                                                                  class="header__menu-heading sub-header__menu-heading font-weight">
+                                                                  Shop Layouts
+                                                            </h3>
+                                                            <span class="mobile-arrow">
+                                                                  <i class="bi bi-chevron-right"></i>
+                                                            </span>
+                                                            <!-- ?----Sub Header----- -->
+                                                            <ul class="sub-header__item-list">
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Three
+                                                                              Columns</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Four
+                                                                              Columns</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Full
+                                                                              Width</a>
+                                                                  </li>
+                                                            </ul>
+                                                      </li>
+                                                      <li class="sub-header__item">
+                                                            <h3
+                                                                  class="header__menu-heading sub-header__menu-heading font-weight">
+                                                                  Shop Pages
+                                                            </h3>
+                                                            <span class="mobile-arrow">
+                                                                  <i class="bi bi-chevron-right"></i>
+                                                            </span>
+                                                            <!-- ?----Sub Header----- -->
+                                                            <ul class="sub-header__item-list">
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">My
+                                                                              account</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Cart</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Checkout</a>
+                                                                  </li>
+                                                            </ul>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                          <li class="header__menu-item container">
+                                                <h3 class="header__menu-heading">Elements</h3>
+                                                <!-- ?----Sub Header----- -->
+                                                <ul class="sub-header__list pc sub-header__list-element row">
+                                                      <li class="sub-header__item d-block col-3">
+                                                            <h3 class="header__menu-heading font-weight active-color">
+                                                                  Featured
+                                                            </h3>
+                                                            <!-- ?----Sub Header----- -->
+                                                            <ul class="sub-header__item-list-element">
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Tour
+                                                                              List</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Tour
+                                                                              Carousel</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Tours
+                                                                              Filter</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Destination
+                                                                              With Tours</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Destination
+                                                                              List</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Destination
+                                                                              Fullscreen Slider</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Fullscreen
+                                                                              Sections</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Reviews
+                                                                              Carousel</a>
+                                                                  </li>
+                                                            </ul>
+                                                      </li>
+                                                      <li class="sub-header__item d-block col-3">
+                                                            <h3 class="header__menu-heading font-weigh active-color">
+                                                                  Presentation
+                                                            </h3>
+                                                            <!-- ?----Sub Header----- -->
+                                                            <ul class="sub-header__item-list-element">
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Team</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Blog
+                                                                              List</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Shop
+                                                                              List</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Testimonials</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Banner</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Clients</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Parallax
+                                                                              Section</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Video
+                                                                              Button</a>
+                                                                  </li>
+                                                            </ul>
+                                                      </li>
+                                                      <li class="sub-header__item d-block col-3">
+                                                            <h3 class="header__menu-heading font-weight active-color">
+                                                                  Classic
+                                                            </h3>
+                                                            <!-- ?----Sub Header----- -->
+                                                            <ul class="sub-header__item-list-element">
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Accordions</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Tabs</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Buttons</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Google
+                                                                              Maps</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Contact
+                                                                              Form</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Progress
+                                                                              Bar</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Countdown</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Counters</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Call To
+                                                                              Action</a>
+                                                                  </li>
+                                                            </ul>
+                                                      </li>
+                                                      <li class="sub-header__item d-block col-3">
+                                                            <h3 class="header__menu-heading font-weight active-color">
+                                                                  Typography
+                                                            </h3>
+                                                            <!-- ?----Sub Header----- -->
+                                                            <ul class="sub-header__item-list-element">
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Headings</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Columns</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Section
+                                                                              Title</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Blockquote</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Dropcaps</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Highlights</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Icon with
+                                                                              text</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#"
+                                                                              class="sub-header__link">Separators</a>
+                                                                  </li>
+                                                                  <li class="sub-header__item">
+                                                                        <a href="#" class="sub-header__link">Custom
+                                                                              Font</a>
+                                                                  </li>
+                                                            </ul>
+                                                      </li>
+                                                </ul>
+                                          </li>
+                                    </ul>
+                              </div>
+                              <!-- todo Header Action -->
+                              <div class="header__action d-none d-xl-flex">
+                                    <!-- todo Cart -->
+                                    <div
+                                          class="header__action-cart header__action-item position-relative btn-slide-down">
+                                          <span class="header__action-cart-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                      fill="currentColor" class="bi bi-basket3" viewBox="0 0 16 16">
+                                                      <path
+                                                            d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM3.394 15l-1.48-6h-.97l1.525 6.426a.75.75 0 0 0 .729.574h9.606a.75.75 0 0 0 .73-.574L15.056 9h-.972l-1.479 6h-9.21z" />
+                                                </svg>
+                                          </span>
+                                          <!--? List Shop Cart has Product -->
+                                          <!--? List Shop Cart no Product -->
+                                          <ul class="cart__product-list position-absolute open-slide-down">
+                                                <p>No products in the cart.</p>
+                                          </ul>
+                                    </div>
+                                    <!-- todo Search -->
+                                    <div class="header__action-search header__action-item">
+                                          <span class="header__action-search-icon">
+                                                <svg xmlns=" http://www.w3.org/2000/svg" width="16" height="16"
+                                                      fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                      <path
+                                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                </svg>
+                                          </span>
+                                    </div>
+                                    <!-- todo Slide Menu -->
+                                    <div class="header__action-menu-button-slide header__action-item">
+                                          <span class="header__action-menu-button-slide-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                      fill="currentColor" class="bi bi-text-right" viewBox="0 0 16 16">
+                                                      <path fill-rule="evenodd"
+                                                            d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                          </span>
+                                    </div>
+                              </div>
+                        </section>
                   </section>
             </header>
             <!-- ! Carousel Banner-->
@@ -1221,7 +1691,7 @@
                         </div>
                         <!-- Left and right controls/icons -->
                         <button
-                              class="carousel-control-prev banner-slider__control banner-slider__control-prev d-none d-xl-block"
+                              class="carousel-control-prev banner-slider__control banner-slider__control-prev d-none d-xl-flex"
                               type="button" data-bs-target="#carousel-banner" data-bs-slide="prev">
                               <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
                               <span class="banner-slider__btn banner-slider__btn-left">
@@ -1229,7 +1699,7 @@
                               </span>
                         </button>
                         <button
-                              class="carousel-control-next banner-slider__control banner-slider__control-next d-none d-xl-block"
+                              class="carousel-control-next banner-slider__control banner-slider__control-next d-none d-xl-flex"
                               type="button" data-bs-target="#carousel-banner" data-bs-slide="next">
                               <!-- <span class="carousel-control-next-icon"></span> -->
                               <span class="banner-slider__btn banner-slider__btn-right">
@@ -1704,7 +2174,7 @@
                   </div>
             </section>
             <!-- !Winter Holiday -->
-            <section class="winter-holiday container-fluid text-center winter-padding">
+            <section class="winter-holiday container text-center winter-padding">
                   <div class="winter-holiday__wrapper">
                         <div class="winter-holiday__info winter-info">
                               <h3 class="winter-holiday__heading active-color winter-heading">Enjoy Your</h3>
@@ -1916,7 +2386,7 @@
                   </div>
             </section>
             <!-- !Winter Resort -->
-            <section class="winter-resort container-fluid text-center winter-padding">
+            <section class="winter-resort container text-center winter-padding">
                   <div class="winter-resort__wrapper">
                         <div class="winter-resort__info section-padding winter-info">
                               <h3 class="winter-resort__heading active-color winter-heading">
@@ -1947,10 +2417,11 @@
                                           <div class="winter-resort__text position-absolute text-white">
                                                 <h5>France</h5>
                                           </div>
-                                          <span class="winter-resort__start bg-primary position-absolute">
-                                                <i class="fas fa-star text-white"></i>
-                                          </span>
                                     </div>
+                                    <!-- ? Start -->
+                                    <span class="winter-resort__start bg-primary position-absolute">
+                                          <i class="fas fa-star text-white"></i>
+                                    </span>
                               </li>
                               <li class="winter-resort__item col-md-6 col-lg-4 position-relative">
                                     <div href="#" class="winter-resort__image position-relative">
@@ -1966,25 +2437,25 @@
                   </div>
             </section>
             <!-- ! FOOTER -->
-            <footer class="footer">
-                  <ul class="footer__list row gx-md-5">
+            <footer class="footer ">
+                  <ul class="footer__list row gx-md-5 ">
                         <li class="footer__item col-md-6 pb-5 col-xl-3">
                               <a href="#" class="footer__logo pb-4 d-block">
                                     <img src="./assets/img/logo-footer.png" alt="footer__logo">
                               </a>
                               <p class="footer__desc pb-4 footer-color-link">
                                     Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae</p>
-                              <div class="footer__contact pb-3">
-                                    <i class="far fa-envelope text-white"></i>
-                                    <span class="text-white">setsail@qode.com</span>
-                              </div>
-                              <a class="footer__contact pb-3 d-block" href="tel: 1 562 867 5309">
-                                    <i class="fas fa-phone-alt text-white"></i>
-                                    <span class="text-white">1 562 867 5309</span>
+                              <a href="#" class="footer__contact pb-3 d-block text-white">
+                                    <i class="far fa-envelope "></i>
+                                    <span>setsail@qode.com</span>
                               </a>
-                              <a class="footer__contact pb-3 d-block" href="#">
-                                    <i class="bi bi-geo-alt text-white d-inline-block"></i>
-                                    <span class="text-white">Broadway & Morris St, New York</span>
+                              <a href="#" class="footer__contact text-white pb-3 d-block" href="tel: 1 562 867 5309">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>1 562 867 5309</span>
+                              </a>
+                              <a class="footer__contact text-white pb-3 d-block" href="#">
+                                    <i class="bi bi-geo-alt d-inline-block"></i>
+                                    <span>Broadway & Morris St, New York</span>
                               </a>
                         </li>
                         <li class="footer__item col-md-6 pb-5 col-xl-3">
@@ -1992,20 +2463,20 @@
                               <div class="footer__item-content pb-4">
                                     <a href="#" class="footer__item-link footer-color-link pb-3">
                                           Visit Thailand, Bali And China </a>
-                                    <div class="footer__item-link--date text-white">
-                                          September 7, 2016 </div>
+                                    <a href="#" class="footer__item-link footer-color-date text-white">
+                                          September 7, 2016 </a>
                               </div>
                               <div class="footer__item-content pb-4">
                                     <a href="#" class="footer__item-link footer-color-link pb-3">
                                           The Sound Of Our Jungle </a>
-                                    <div class="footer__item-link--date text-white">
-                                          September 7, 2016 </div>
+                                    <a href="#" class="footer__item-link footer-color-date text-white">
+                                          September 7, 2016 </a>
                               </div>
                               <div class="footer__item-content pb-4">
                                     <a href="#" class="footer__item-link footer-color-link pb-3">
                                           New Year, New Resolutions! </a>
-                                    <div class="footer__item-link--date text-white">
-                                          September 7, 2016 </div>
+                                    <a href="#" class="footer__item-link footer-color-date text-white">
+                                          September 7, 2016 </a>
                               </div>
                         </li>
                         <li class="footer__item col-md-6 pb-5 col-xl-3">

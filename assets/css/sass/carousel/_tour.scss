@@ -19,6 +19,13 @@
             }
       }
 
+      &__calendar,
+      &__man {
+            i {
+                  margin: auto 0 !important;
+            }
+      }
+
       &__skiing {
             a {
                   color: #fff;
@@ -37,6 +44,8 @@
 
       &__info {
             margin-bottom: 6rem;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
             box-shadow: 5px 8px 13.92px 2.08px rgb(0 0 0 / 5%);
 
             a {

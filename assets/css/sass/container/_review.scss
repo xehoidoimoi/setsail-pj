@@ -45,6 +45,10 @@
                   opacity: 1 !important;
                   margin-left: 1rem !important;
                   background-color: #3fd0d480;
+
+                  &:hover {
+                        background-color: $primary_color;
+                  }
             }
 
             .swiper-pagination-bullet-active {
@@ -65,12 +69,16 @@
       }
 
       &-city {
-
             margin-bottom: 8px;
       }
 
       &-link {
             @include title (22px);
+            transition: all 0.2s linear;
+
+            &:hover {
+                  color: $primary_color;
+            }
       }
 
       &-rate {

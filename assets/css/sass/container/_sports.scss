@@ -7,12 +7,14 @@
       &__video {
             cursor: pointer;
             margin-bottom: 4rem;
-            // transition: all 0.95s linear;
+
+            img {
+                  transition: all 0.25s linear;
+            }
 
             &:hover {
                   .winter-sport__img img {
                         transform: scale(1.05);
-                        transition: all 0.25s linear;
                   }
             }
 
@@ -32,9 +34,14 @@
       &__view-link {
             outline: 0;
             font-size: 13px;
-            text-transform: uppercase;
             font-weight: 600;
-            padding: 14px 42px;
+            padding: 18px 66px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
             border-radius: 0 !important;
+
+            &:hover {
+                  background-color: $primary_color-hover !important;
+            }
       }
 }

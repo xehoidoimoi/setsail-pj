@@ -45,200 +45,210 @@
                   }
             }
       }
+}
 
-      // todo Search
-      .search-modal {
-            &.active {
-                  display: block !important;
-                  animation: fade 0.25s linear;
-                  will-change: fade 0.25s linear;
-                  transition: all 0.25s linear;
+// todo Slide
+.slide-menu {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10000;
+      padding: 38px;
+      line-height: initial;
+      max-width: 460px;
+      background-color: #fff;
+      transition: all 0.25s linear;
+      transform: translateX(100%);
+
+      &.active {
+            transform: translateX(0%);
+      }
+
+      &__overlay {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99;
+            display: none;
+            position: fixed;
+            background-color: transparent;
+      }
+
+      &__close {
+            top: 20px;
+            right: 20px;
+            position: absolute;
+            cursor: pointer;
+
+            &:hover {
+                  color: $primary_color;
             }
 
-            &__overlay {
-                  top: 0;
-                  left: 0;
-                  right: 0;
-                  bottom: 0;
-                  z-index: 999;
-                  @include background-opacity($primary_color, 0.7);
+            svg {
+                  width: 22px;
+                  height: auto;
             }
+      }
 
-            &__close {
-                  top: 0;
-                  right: 28px;
-                  color: #fff;
-                  z-index: 9999;
+      &__logo {
+            padding: 36px 0;
 
-                  svg {
-                        width: 30px;
-                        height: auto;
-                  }
-            }
+            &-item {
+                  padding: 12px 0;
 
-            &__form {
-                  top: 50%;
-                  left: 50%;
-                  display: flex;
-                  width: 75%;
-                  z-index: 9999;
-                  line-height: initial;
-                  max-width: 950px;
-                  transform: translate(-50%, -50%);
-            }
-
-            &__input {
-                  flex: 1;
-                  padding: 30px;
-                  background-color: #fff;
-            }
-
-            &__btn {
-                  flex: 0.3;
-                  font-weight: 600;
-                  background-color: $primary_color;
-
-                  &:hover {
-                        transition: all 0.2s linear;
-                        background-color: #23a9af;
+                  img {
+                        margin: 0 auto;
                   }
             }
       }
 
-      // todo Slide
-      .slide-menu {
-            top: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 9999;
-            padding: 38px;
-            line-height: initial;
-            max-width: 460px;
-            background-color: #fff;
-            transition: all 0.25s linear;
-            transform: translateX(100%);
+      &__map {
+            margin-bottom: 36px;
 
-            &.active {
-                  transform: translateX(0%);
+            &-link {
+                  display: block;
+                  margin-bottom: 36px;
+                  box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 15%);
+
             }
 
-            &__overlay {
-                  top: 0;
-                  left: 0;
-                  right: 0;
-                  bottom: 0;
-                  z-index: 99;
-                  display: none;
-                  position: fixed;
-                  background-color: transparent;
+            &-desc {
+                  line-height: 1.8;
+                  text-align: center;
+                  color: #505050;
+            }
+      }
+
+      &__search {
+            text-align: center;
+            margin-bottom: 36px;
+
+            &-title {
+                  color: #212121;
+                  font-size: 18px;
+                  font-weight: 600;
+                  margin-bottom: 24px;
             }
 
-            &__close {
-                  position: absolute;
-                  top: 20px;
-                  right: 10px;
+            &-form {
+                  display: flex;
+                  justify-content: center;
+            }
+
+            &-input {
+                  line-height: 1.8;
+                  background: #f8f8f8;
+                  padding: 12px 0 12px 18px;
+            }
+
+            &-btn {
+                  color: #fff;
+                  padding: 0 18px;
+                  background: #3fd0d4;
+                  transition: all 0.25s linear;
 
                   &:hover {
-                        color: $primary_color;
+                        background-color: #3abdc1;
                   }
             }
+      }
 
-            &__logo {
-                  padding: 36px 0;
+      &__social {
+            text-align: center;
+            margin-bottom: 36px;
+
+            &-title {
+                  font-size: 18px;
+                  font-weight: 600;
+                  margin-bottom: 24px;
+                  color: $secondary_color;
+            }
+
+            &-icon-wrapper {
+                  display: flex;
+                  justify-content: center;
+            }
+
+            &-icon {
+                  margin: 0px 6px;
+                  border-radius: 50%;
+                  transition: all 0.25s linear;
+                  background-color: $primary_color;
+
+                  &:hover {
+                        background-color: #3abdc1;
+                  }
 
                   &-item {
-                        padding: 12px 0;
-
-                        img {
-                              margin: 0 auto;
-                        }
-                  }
-            }
-
-            &__map {
-                  margin-bottom: 36px;
-
-                  &-link {
-                        display: block;
-                        margin-bottom: 36px;
-                        box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 15%);
-
-                  }
-
-                  &-desc {
-                        line-height: 1.8;
-                        text-align: center;
-                        color: #505050;
-                  }
-            }
-
-            &__search {
-                  text-align: center;
-                  margin-bottom: 36px;
-
-                  &-title {
-                        color: #212121;
-                        font-size: 18px;
-                        font-weight: 600;
-                        margin-bottom: 24px;
-                  }
-
-                  &-form {
-                        display: flex;
-                        justify-content: center;
-                  }
-
-                  &-input {
-                        line-height: 1.8;
-                        background: #f8f8f8;
-                        padding: 12px 0 12px 18px;
-                  }
-
-                  &-btn {
                         color: #fff;
-                        padding: 0 18px;
-                        background: #3fd0d4;
-                        transition: all 0.25s linear;
-
-                        &:hover {
-                              background-color: #3abdc1;
-                        }
+                        display: block;
+                        font-size: 18px;
+                        padding: 10px 16px;
                   }
             }
+      }
+}
 
-            &__social {
-                  text-align: center;
-                  margin-bottom: 36px;
+// todo Search
+.search-modal {
+      position: relative;
+      z-index: 10000;
 
-                  &-title {
-                        font-size: 18px;
-                        font-weight: 600;
-                        margin-bottom: 24px;
-                        color: $secondary_color;
-                  }
+      &.active {
+            display: block !important;
+            animation: fade 0.25s linear;
+            will-change: fade 0.25s linear;
+            transition: all 0.25s linear;
+      }
 
-                  &-icon-wrapper {
-                        display: flex;
-                        justify-content: center;
-                  }
+      &__overlay {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            @include background-opacity($primary_color, 0.7);
+      }
 
-                  &-icon {
-                        margin: 0px 6px;
-                        border-radius: 50%;
-                        transition: all 0.25s linear;
-                        background-color: $primary_color;
+      &__close {
+            top: 28px;
+            right: 28px;
+            color: #fff;
+            z-index: 9999;
+            cursor: pointer;
 
-                        &:hover {
-                              background-color: #3abdc1;
-                        }
+            svg {
+                  width: 30px;
+                  height: auto;
+            }
+      }
 
-                        &-item {
-                              color: #fff;
-                              display: block;
-                              font-size: 18px;
-                              padding: 10px 16px;
-                        }
-                  }
+      &__form {
+            top: 50%;
+            left: 50%;
+            display: flex;
+            width: 75%;
+            z-index: 9999;
+            line-height: initial;
+            max-width: 950px;
+            transform: translate(-50%, -50%);
+      }
+
+      &__input {
+            flex: 1;
+            padding: 30px;
+            background-color: #fff;
+      }
+
+      &__btn {
+            flex: 0.3;
+            font-weight: 600;
+            background-color: $primary_color;
+
+            &:hover {
+                  transition: all 0.2s linear;
+                  background-color: #23a9af;
             }
       }
 }
