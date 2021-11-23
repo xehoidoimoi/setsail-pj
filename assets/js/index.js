@@ -195,12 +195,13 @@ const navTop = document.querySelector('.nav-top');
 const navHeader = document.querySelector('#header');
 // console.log(navHeader)
 // * Scroll to top when clicked
-// navTop.addEventListener('click', () => {
-//       document.body.scrollTop = 0;
-//       document.documentElement.scrollTop = 0;
-// })
+navTop.addEventListener('click', () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+})
 // ? On mobile devices
 navTop.ontouchstart = () => {
+      alert('Mobile device');
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
 }
