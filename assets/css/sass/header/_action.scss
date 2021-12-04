@@ -9,7 +9,7 @@
             line-height: $height;
 
             span {
-                  cursor: pointer;
+                  cursor: pointer !important;
             }
 
             &>span:hover {

@@ -201,7 +201,6 @@ navTop.addEventListener('click', () => {
 })
 // ? On mobile devices
 navTop.ontouchstart = function (e) {
-      e.stopPropagation();
       alert('Mobile device');
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
@@ -316,29 +315,26 @@ searchBtn.forEach((item, index) => {
 })
 
 const closeModal = document.querySelectorAll('.close-modal');
-const slideMenuOverlay = document.querySelector('.slide-menu__overlay');
-console.log(closeModal, slideMenuOverlay)
-closeModal.forEach((item, index) => {
+console.log(closeModal)
+closeModal.forEach((item) => {
       item.onclick = (e) => {
             e.stopPropagation(); //! disable parent click event when child is clicked
             item.parentElement.classList.remove('active');
-            if (slideMenuOverlay.style.display = 'block') {
-                  slideMenuOverlay.style.display = 'none';
-            }
       }
 })
 
 // todo Slide Menu
-const slideMenuBtn = document.querySelectorAll('.header__action-menu-button-slide');
+const slideMenuBtn = document.querySelectorAll('.header__action-menu-button-slide-icon');
 const slideMenu = document.querySelector('.slide-menu');
-slideMenuBtn.forEach((item, index) => {
+slideMenuBtn.forEach((item) => {
       item.onclick = () => {
             slideMenu.classList.add('active');
-            slideMenuOverlay.style.display = 'block';
       }
 })
-slideMenuOverlay.onclick = (e) => {
-      e.stopPropagation();
-      slideMenu.classList.remove('active');
-      slideMenuOverlay.style.display = 'none';
-}
+// * Close slide menu when click outside of slide menu
+window.addEventListener('click', function (e) {
+      if (!slideMenu.contains(e.target) && !e.target.matches('.header__action-menu-button-slide-icon svg')) {
+            slideMenu.classList.remove('active');
+            console.log('haha')
+      }
+});

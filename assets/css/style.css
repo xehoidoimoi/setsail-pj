@@ -551,7 +551,7 @@ header {
   line-height: 80px;
 }
 .header__action-item span {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .header__action-item > span:hover {
   color: #3fd0d4;
